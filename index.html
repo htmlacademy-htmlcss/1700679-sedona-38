@@ -5,8 +5,184 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+    <header class="page-header">
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a href="#">
+              <img src="pictures/svg/logo.svg" alt="logo">
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a href="#">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a href="№" >О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a href="catalog.html">
+              Гостиницы
+            </a>
+          </li>
+        </ul>
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <img src="pictures/svg/search.svg">
+          </li>
+          <li class="navigation-item">
+            <img src="pictures/svg/heart.svg">
+          </li>
+          <li class="navigation-item">
+            <button>Хочу сюда!</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <header class="main-header">
+        <div class="hero">
+          <div class="greeting">
+            <img src="pictures/png/welcome.png">
+            <img src="pictures/svg/subWelcome.svg">
+          </div>
+          <div class="name">
+            <h1 class="visually-hidden">Седона</h1>
+            <img src="pictures/png/Sedona.png">
+          </div>
+        </div>
+        <div class="subHero">
+          <h2>Седона — небольшой городок в Аризоне,
+            заслуживающий большего!</h2>
+          <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        </div>
+      </header>
+      <section class="advanteges">
+        <ul class="advanteges-list">
+          <li class="gallery-item">
+            <ul class="Gallery-list">
+              <li class="Gallery-item">
+                <h3>
+                  Настоящий городок
+                </h3>
+                <p>
+                  Седона — не аттракцион для туристов, там течёт своя жизнь
+                </p>
+              </li>
+              <li class="Gallery-item">
+                <img src="pictures/jpeg/sedonaHouse.jpg">
+              </li>
+            </ul>
+          </li>
+          <li class="advanteges-item">
+            <ul class="Gallery-list">
+              <li class="Gallery-item">
+                <h3>
+                  Небольшая площадь
+                </h3>
+                <p>
+                  Все достопримечательности находятся очень близко своя жизнь
+                </p>
+              </li>
+              <li class="Gallery-item">
+                <h3>
+                    Красивая
+                    дорога
+                </h3>
+                <p>
+                  Ехать в Седону из Лас-Вегаса совсем не скучно!
+                </p>
+              </li>
+            <li class="Gallery-item">
+                <h3>
+                  Мало
+                  туристов
+                </h3>
+                <p>
+                  Большинство едет в Гранд Каньон и толпится там
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="advanteges-item">
+            <ul class="Gallery-list">
+              <li class="Gallery-item">
+                <img src="pictures/jpeg/sedonaCanyon.jpg">
+              </li>
+              <li class="Gallery-item">
+                <h3>
+                  Там есть
+                  мост дьявола
+                </h3>
+                <p>
+                  Да, по нему можно пройти! Если вы осмелитесь, разумеется
+                </p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section class="Adition-Advanteges">
+        <div class="title">
+          <h2>Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+          <p>Опытный персонал и качественное обслуживание!</p>
+        </div>
+        <div class="content">
+          <ul class="adition-advanteges-list">
+            <li class="adition-advateges-item">
+              <img src="pictures/svg/home.svg">
+              <h3>Жильё</h3>
+              <p>пожить в настоящем мотеле,
+                всё как в кино!</p>
+            </li>
+            <li class="adition-advateges-item">
+              <img src="pictures/svg/food.svg">
+              <h3>Еда</h3>
+              <p>Всегда заказывайте
+                топовый фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+            <li class="adition-advateges-item">
+              <img src="pictures/svg/souvenirs.svg">
+              <h3>Сувениры</h3>
+              <p>Не только китайского,
+                но и настоящего местного производства!</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="find-accomidation">
+        <h2>Заинтересовались?</h2>
+        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button>Поиск гостиницы в Седоне</button>
+      </section>
+      <article class="subscribe">
+        <h2>Подпишитесь на рассылку</h2>
+        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <input type="email" value="Ваш e-mail">
+        <button>Подписаться</button>
+      </article>
+    </main>
+    <footer>
+      <div class="socials">
+        <ul class="soclial-list">
+          <li class="soclials-item">
+            <a href="#">
+              <img src="pictures/svg/vk.svg" alt="vk">
+            </a>
+          </li>
+          <li class="soclials-item">
+            <a href="#">
+              <img src="pictures/svg/telegram.svg" alt="telegram">
+            </a>
+          </li>
+          <li class="soclials-item">
+            <a href="#">
+              <img src="pictures/svg/youtube.svg" alt="youtube">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <img src="pictures/png/Phone.png" alt="Our phone: +78121212">
+      <a><img src="pictures/svg/HTMLAcademyLogo.svg" alt="HTMLAcademy"></a>
+    </footer>
   </body>
 </html>
