@@ -27,13 +27,15 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
+            <p class="visually-hidden">Найти гостиницу</p>
             <img src="pictures/svg/search.svg">
           </li>
           <li class="navigation-item">
+            <p class="visually-hidden">Добавить в избранное</p>
             <img src="pictures/svg/heart.svg">
           </li>
           <li class="navigation-item">
-            <button>Хочу сюда!</button>
+            <button type="button">Хочу сюда!</button>
           </li>
         </ul>
       </nav>
@@ -154,35 +156,41 @@
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button>Поиск гостиницы в Седоне</button>
       </section>
-      <article class="subscribe">
+      <article class="newsletter-subscribe">
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <input type="email" value="Ваш e-mail">
-        <button>Подписаться</button>
+        <form class="newsletter-subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <input type="email" placeholder="Ваш e-mail">
+          <button type="button">Подписаться</button>
+        </form>
       </article>
     </main>
     <footer>
       <div class="socials">
         <ul class="soclial-list">
           <li class="soclials-item">
-            <a href="#">
+            <a href="https://vk.com/htmlacademy">
               <img src="pictures/svg/vk.svg" alt="vk">
             </a>
           </li>
           <li class="soclials-item">
-            <a href="#">
+            <a href="https://t.me/htmlacademy">
               <img src="pictures/svg/telegram.svg" alt="telegram">
             </a>
           </li>
           <li class="soclials-item">
-            <a href="#">
+            <a href="https://www.youtube.com/user/htmlacademyru">
               <img src="pictures/svg/youtube.svg" alt="youtube">
             </a>
           </li>
         </ul>
       </div>
-      <img src="pictures/png/Phone.png" alt="Our phone: +78121212">
-      <a><img src="pictures/svg/HTMLAcademyLogo.svg" alt="HTMLAcademy"></a>
+      <a href="tel:+78121212">
+        <img src="pictures/png/Phone.png" alt="Our phone: +78121212">
+      </a>
+      <a href="https://htmlacademy.ru/">
+        <img src="pictures/svg/HTMLAcademyLogo.svg" alt="HTMLAcademy">
+      </a>
     </footer>
   </body>
 </html>
