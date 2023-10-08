@@ -1,9 +1,213 @@
+/* PT Sans */
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/PTSans-Regular.ttf") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/PTSans-Bold.ttf") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/PTSans-Italic.ttf") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/PTSans-BoldItalic.ttf") format("woff2");
+  font-display: swap;
+}
+
+/* PT Sans Narrow */
+@font-face {
+  font-family: "PT Sans Narrow";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/PTSansNarrow-Regular.ttf") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans Narrow";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/PTSansNarrow-Bold.ttf") format("woff2");
+  font-display: swap;
+}
 
 body{
-  background-color: #F2F2F2;
-  font-family: PT sans;
+  font-family: Pt sans;
+  background: #F2F2F2;
 }
 
 main{
-  background-color: #FFFFFF;
+  background: #FFF;
+}
+
+.page-header{
+  background: #FFF;
+}
+
+.navigation a{
+
+  font-family: Pt sans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.here{
+  width: 160px;
+  background-color: #756157;
+  border: 4px solid #756157;
+}
+
+.here a{
+  color: white;
+  text-transform: uppercase;
+}
+
+.description p{
+  font-family: Pt sans;
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.description h2{
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.hero{
+  background-image: url(../pictures/jpeg/sedona_background.jpg);
+}
+
+.advanteges-item h3{
+  font-family: Pt sans;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advanteges-item p{
+  font-family: Pt sans;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.adition-advateges p{
+  font-family: Pt sans;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.adition-advateges h2{
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.adition-advateges-item h3{
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 28px;
+}
+
+.adition-advateges-item p{
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.accommodation{
+  background: url(../pictures/svg/home.svg) no-repeat;
+}
+
+.food{
+  background: url(../pictures/svg/food.svg) no-repeat;
+}
+
+.souvenirs{
+  background: url(../pictures/svg/souvenirs.svg) no-repeat;
+}
+
+.find-accommodation span{
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.find-accommodation p{
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.find-accommodation button{
+  color: #FFFFFF;
+  background-color: #756157;
+  border: 4px solid #756157;
+}
+
+.newsletter-subscribe{
+  background-image: url(../pictures/jpeg/subscribe_background.jpg);
+  color: #FFFFFF;
+}
+
+.newsletter-subscribe h2{
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.newsletter-subscribe p{
+  font-size: 22px;
+  line-height: 26px;
+}
+.newsletter-subscribe button{
+  border-color: #82B3D3;
+  background-color:#82B3D3;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+
+
+.page-footer{
+  background-color: #FFF;
+}
+
+.vk{
+  background: url(../pictures/svg/vk.svg) no-repeat;
+}
+
+.telegram{
+  background: url(../pictures/svg/telegram.svg) no-repeat;
+}
+
+.youtube{
+  background: url(../pictures/svg/youtube.svg) no-repeat;
 }

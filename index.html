@@ -3,12 +3,14 @@
 
   <head>
     <meta charset="utf-8">
+
     <title>
       HTML Academy: Седона
     </title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -55,31 +57,31 @@
             </a>
           </li>
         </ul>
-
-        <a href="#">
-          Хочу сюда!
-        </a>
+        <div class="here">
+          <a href="#">
+            Хочу сюда!
+          </a>
+        </div>
       </nav>
     </header>
 
     <main>
-
       <div class="hero">
-              <h1 class="visually-hidden">
-                Седона
-              </h1>
-              <img src="pictures/svg/welcome.svg" height="352" width="458" alt="welcome to the gorgeous Secona because the grand Canyon sucks!">
+        <h1 class="visually-hidden">
+          Седона
+        </h1>
+        <img src="pictures/svg/welcome.svg" height="352" width="458" alt="welcome to the gorgeous Secona because the grand Canyon sucks!">
       </div>
 
       <section class="advanteges">
-        <header class="description">
+        <div class="description">
           <p>
             Седона — небольшой городок в Аризоне, заслуживающий большего!
           </p>
           <h2>
             Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
           </h2>
-        </header>
+        </div>
         <ul class="advanteges-list">
           <li class="advanteges-item">
             <h3>
@@ -129,51 +131,49 @@
       </section>
 
       <section class="adition-advanteges">
-        <div class="title">
-          <p>
-            Приезжайте в Седону отдохнуть в комфорте и уюте!
-          </p>
-          <h2>
-            Опытный персонал и качественное обслуживание!
-          </h2>
-        </div>
-          <ul class="adition-advanteges-list">
-            <li class="adition-advateges-item">
-              <h3>
-                Жильё
-              </h3>
-              <p>
-                пожить в настоящем мотеле, всё как в кино!
-              </p>
-            </li>
+        <p>
+          Приезжайте в Седону отдохнуть в комфорте и уюте!
+        </p>
+        <h2>
+          Опытный персонал и качественное обслуживание!
+        </h2>
+        <ul class="adition-advanteges-list">
+          <li class="adition-advateges-item accommodation">
+            <h3>
+              Жильё
+            </h3>
+            <p>
+              пожить в настоящем мотеле, всё как в кино!
+            </p>
+          </li>
 
-            <li class="adition-advateges-item">
-              <h3>
-                Еда
-              </h3>
-              <p>
-                Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
-              </p>
-            </li>
+          <li class="adition-advateges-item food">
+            <h3>
+              Еда
+            </h3>
+            <p>
+              Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+            </p>
+          </li>
 
-            <li class="adition-advateges-item">
-              <h3>
-                Сувениры
-              </h3>
-              <p>
-                Не только китайского, но и настоящего местного производства!
-              </p>
+          <li class="adition-advateges-item souvenirs">
+            <h3>
+              Сувениры
+            </h3>
+            <p>
+              Не только китайского, но и настоящего местного производства!
+            </p>
           </li>
         </ul>
       </section>
 
-      <section class="find-accomidation">
+      <section class="find-accommodation">
         <h2 class="visually-hidden">
           Поиск гостиницы
         </h2>
-        <p>
+        <span>
           Заинтересовались?
-        </p>
+        </span>
         <p>
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
@@ -182,43 +182,43 @@
         </button>
       </section>
 
-      <article class="newsletter-subscribe">
-        <h2>
-          Подпишитесь на рассылку
-        </h2>
-        <p>
-          Только полезная информация и никакого спама, честное бойскаутское!
-        </p>
-        <form class="newsletter-subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden" for="e-mail">
-            Впишите свой e-mail
-          </label>
-          <input type="email" placeholder="Ваш e-mail" name="e-mail" id="e-mail" required>
-          <button type="submit">
-            Подписаться
-          </button>
-        </form>
-      </article>
-
     </main>
 
-    <footer>
+    <article class="newsletter-subscribe">
+      <h2>
+        Подпишитесь на рассылку
+      </h2>
+      <p>
+        Только полезная информация и никакого спама, честное бойскаутское!
+      </p>
+      <form class="newsletter-subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="visually-hidden" for="e-mail">
+          Впишите свой e-mail
+        </label>
+        <input type="email" placeholder="Ваш e-mail" name="e-mail" id="e-mail" required>
+        <button type="submit">
+          Подписаться
+        </button>
+      </form>
+    </article>
+
+    <footer class="page-footer">
         <ul class="soclial-list">
-          <li class="soclials-item">
+          <li class="soclials-item vk">
             <a href="https://vk.com/htmlacademy">
               <span class="visually-hidden">
                 Ссылка на нас в vk
               </span>
             </a>
           </li>
-          <li class="soclials-item">
+          <li class="soclials-item telegram">
             <a href="https://t.me/htmlacademy">
               <span class="visually-hidden">
                 Ссылка на нас в telegram
               </span>
             </a>
           </li>
-          <li class="soclials-item">
+          <li class="soclials-item youtube">
             <a href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">
                 Ссылка на нас в youtube
