@@ -49,7 +49,7 @@
 }
 
 body{
-  font-family: Pt sans;
+  font-family: Pt Sans;
   background: #F2F2F2;
 }
 
@@ -62,8 +62,7 @@ main{
 }
 
 .navigation a{
-
-  font-family: Pt sans;
+  color: #000000;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -72,6 +71,7 @@ main{
 }
 
 .here{
+  color: #FFF;
   width: 160px;
   background-color: #756157;
   border: 4px solid #756157;
@@ -82,15 +82,18 @@ main{
   text-transform: uppercase;
 }
 
-.description p{
-  font-family: Pt sans;
+.description{
+  text-align: center;
+
   font-size: 30px;
   text-transform: uppercase;
   line-height: 36px;
   font-weight: 700;
 }
-
-.description h2{
+.advanteges{
+  text-align: center;
+}
+.advanteges h2{
   font-size: 22px;
   line-height: 26px;
 }
@@ -99,8 +102,12 @@ main{
   background-image: url(../pictures/jpeg/sedona_background.jpg);
 }
 
+.town{
+  color: #FFF;
+  background-color: #82B3D3;
+}
 .advanteges-item h3{
-  font-family: Pt sans;
+
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -108,16 +115,33 @@ main{
 }
 
 .advanteges-item p{
-  font-family: Pt sans;
+
   font-size: 18px;
   line-height: 21px;
 }
 
-.adition-advateges p{
-  font-family: Pt sans;
+.nested-advanteges-items{
+  background-color: rgba(131, 179, 211, 0.20);
+}
+.devil-bridge{
+  color: #FFF;
+  background-color: #82B3D3;
+}
+.adition-advateges{
+
+}
+.come-to-sedona{
+  text-align: center;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+}
+
+.good-service{
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
 }
 
 .adition-advateges h2{
@@ -127,6 +151,7 @@ main{
 }
 
 .adition-advateges-item h3{
+  text-align: center;
   font-weight: 700;
   font-size: 24px;
   text-transform: uppercase;
@@ -134,22 +159,15 @@ main{
 }
 
 .adition-advateges-item p{
+  text-align: center;
   font-size: 18px;
   line-height: 21px;
 }
 
-.accommodation{
-  background: url(../pictures/svg/home.svg) no-repeat;
-}
 
-.food{
-  background: url(../pictures/svg/food.svg) no-repeat;
+.find-accommodation{
+  text-align: center;
 }
-
-.souvenirs{
-  background: url(../pictures/svg/souvenirs.svg) no-repeat;
-}
-
 .find-accommodation span{
   font-size: 30px;
   font-weight: 700;
@@ -173,6 +191,9 @@ main{
   color: #FFFFFF;
 }
 
+.newsletter-subscribe{
+  text-align: center;
+}
 .newsletter-subscribe h2{
   font-size: 30px;
   font-weight: 700;
@@ -198,16 +219,4 @@ main{
 
 .page-footer{
   background-color: #FFF;
-}
-
-.vk{
-  background: url(../pictures/svg/vk.svg) no-repeat;
-}
-
-.telegram{
-  background: url(../pictures/svg/telegram.svg) no-repeat;
-}
-
-.youtube{
-  background: url(../pictures/svg/youtube.svg) no-repeat;
 }

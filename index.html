@@ -15,7 +15,7 @@
 
   <body>
 
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="navigation">
         <a aria-current="page">
           <img src="pictures/svg/logo.svg" alt="логотип" width="140" height="70">
@@ -58,39 +58,40 @@
           </li>
         </ul>
         <div class="here">
-          <a href="#">
+          <a href="#" >
             Хочу сюда!
           </a>
         </div>
       </nav>
     </header>
 
-    <main>
-      <div class="hero">
+    <main data-test="main">
+      <div class="hero" data-test="hero">
         <h1 class="visually-hidden">
           Седона
         </h1>
         <img src="pictures/svg/welcome.svg" height="352" width="458" alt="welcome to the gorgeous Secona because the grand Canyon sucks!">
       </div>
 
-      <section class="advanteges">
-        <div class="description">
-          <p>
-            Седона — небольшой городок в Аризоне, заслуживающий большего!
-          </p>
-          <h2>
-            Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
-          </h2>
-        </div>
+      <section class="advanteges" data-test="advantages">
+        <p class="description">
+          Седона — небольшой городок в Аризоне, заслуживающий большего!
+        </p>
+        <h2>
+          Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
+        </h2>
         <ul class="advanteges-list">
-          <li class="advanteges-item">
-            <h3>
+
+            <li class="advanteges-item">
+              <div class="town">
+              <h3>
               Настоящий городок
             </h3>
             <p>
               Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
             <img src="pictures/jpeg/sedona_town.jpg" width="800" alt="городок Седона">
+            </div>
             <ul class="nested-advanteges-list">
               <li class="nested-advanteges-items">
                 <h3>
@@ -118,7 +119,7 @@
               </li>
             </ul>
           </li>
-          <li class="advanteges-item">
+          <li class="advanteges-item devil-bridge">
             <img src="pictures/jpeg/devil_bridge.jpg" width="800" alt="Большой каньон">
             <h3>
               Там есть мост дьявола
@@ -131,10 +132,10 @@
       </section>
 
       <section class="adition-advanteges">
-        <p>
+        <span class="come-to-sedona">
           Приезжайте в Седону отдохнуть в комфорте и уюте!
-        </p>
-        <h2>
+        </span>
+        <h2 class="good-service">
           Опытный персонал и качественное обслуживание!
         </h2>
         <ul class="adition-advanteges-list">
@@ -167,7 +168,7 @@
         </ul>
       </section>
 
-      <section class="find-accommodation">
+      <section class="find-accommodation" data-test="search">
         <h2 class="visually-hidden">
           Поиск гостиницы
         </h2>
@@ -184,7 +185,7 @@
 
     </main>
 
-    <article class="newsletter-subscribe">
+    <article class="newsletter-subscribe" data-test="subscribe">
       <h2>
         Подпишитесь на рассылку
       </h2>
@@ -202,7 +203,7 @@
       </form>
     </article>
 
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
         <ul class="soclial-list">
           <li class="soclials-item vk">
             <a href="https://vk.com/htmlacademy">
