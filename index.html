@@ -57,11 +57,11 @@
             </a>
           </li>
         </ul>
-        <div class="here">
-          <a href="#" >
-            Хочу сюда!
+          <a href="#" class="button-a grown">
+            <span>
+              Хочу сюда
+            </span>
           </a>
-        </div>
       </nav>
     </header>
 
@@ -82,15 +82,14 @@
         </h2>
         <ul class="advanteges-list">
 
-            <li class="advanteges-item">
-              <div class="town">
+            <li class="advanteges-item"><div class="town">
               <h3>
-              Настоящий городок
-            </h3>
-            <p>
-              Седона — не аттракцион для туристов, там течёт своя жизнь
-            </p>
-            <img src="pictures/jpeg/sedona_town.jpg" width="800" alt="городок Седона">
+                Настоящий городок
+              </h3>
+              <p>
+                Седона — не аттракцион для туристов, там течёт своя жизнь
+              </p>
+              <img src="pictures/jpeg/sedona_town.jpg" width="800" alt="городок Седона">
             </div>
             <ul class="nested-advanteges-list">
               <li class="nested-advanteges-items">
@@ -178,7 +177,7 @@
         <p>
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <button type="button">
+        <button type="button" class="standart-button">
           Поиск гостиницы в Седоне
         </button>
       </section>
@@ -197,13 +196,17 @@
           Впишите свой e-mail
         </label>
         <input type="email" placeholder="Ваш e-mail" name="e-mail" id="e-mail" required>
-        <button type="submit">
+        <button type="submit" class="standart-button blue-batton">
           Подписаться
         </button>
       </form>
     </article>
 
     <footer class="page-footer" data-test="footer">
+      <section class="socials">
+        <h2 class="visually-hidden">
+          Наши соцсети
+        </h2>
         <ul class="soclial-list">
           <li class="soclials-item vk">
             <a href="https://vk.com/htmlacademy">
@@ -227,15 +230,24 @@
             </a>
           </li>
         </ul>
+      </section>
 
-      <div>
+
+      <div class="contacts">
+        <span class="visually-hidden">
+          Наш телефон
+        </span>
         <a href="tel:+78128121212">
         <span class="phonnumber">
           +7 (812) 812-12-12
         </span>
       </a>
     </div>
-    <div>
+
+    <div class="partnership">
+      <p class="visually-hidden">
+        Наш партнёр
+      </p>
       <a href="https://htmlacademy.ru/">
         <img src="pictures/svg/htmlacademylogo.svg" width="115" height="33" alt="htmlacademy логотип">
       </a>
