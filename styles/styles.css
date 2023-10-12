@@ -2,28 +2,40 @@
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
-
 
 body{
   font-family: Pt Sans;
   background: #F2F2F2;
 }
 .content{
+  width: 1200px;
   background: #FFF;
+  margin: 0 70px;
 }
-
+p{
+  color:#333333;
+}
+span{
+  color: #333333;
+}
+b{
+  color:#333333;
+}
+a{
+  text-decoration: none;
+}
 .standart-button{
   color: #FFF;
   font-size: 16px;
@@ -46,19 +58,53 @@ body{
 .green-button{
   background-color: #7DB54F;
 }
+.page-header{
+  margin: 0 70px ;
+}
+.navigation{
+  display: flex;
+  justify-self: start;
+}
+.page-header{
+  width: 1200px;
+  height: 64px;
+  align-items:start;
+}
+.nav-logo{
+  display: block;
+  margin-right: 30px;
+}
+.navigation-wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+.navigation-list{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+.navigation-2{
+  display: flex;
+}
 .navigation a{
   color: #000000;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
   text-transform: capitalize;
-  text-decoration: none;
 }
-
+.navigation-item{
+  padding: 0 20px;
+}
+.navigation-item:last-child{
+  padding: 0;
+}
 .button-a{
   background-color: #756157;
   border-radius: 4px;
-  text-decoration: none;
 }
 
 .button-a span{
@@ -69,18 +115,20 @@ body{
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
+  align-self: flex-start;
 }
 .description{
   text-align: center;
-
   font-size: 30px;
   text-transform: uppercase;
   line-height: 36px;
   font-weight: 700;
 }
 .advanteges{
+  color: #FFFFFF;
   text-align: center;
 }
+
 .advanteges h2{
   font-size: 22px;
   line-height: 26px;
@@ -90,9 +138,16 @@ body{
 .welcome-hero{
   background: #5549fc url(../pictures/jpeg/sedona_background.jpg) no-repeat;
 }
-
-.town{
+.reasons-title{
+  color: #333333;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.advanteges-item p{
   color: #FFF;
+}
+.town{
   background-color: #82B3D3;
 }
 .advanteges-item h3{
@@ -113,12 +168,14 @@ body{
   background-color: #83B3D31F;
 }
 .nested-advanteges-items h3{
+  color: #000;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
 }
 .nested-advanteges-items p{
+  color: #333333;
   font-size: 18px;
   line-height: 21px;
 }
@@ -135,10 +192,12 @@ body{
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  text-transform: uppercase;
 }
 
 .good-service{
   text-align: center;
+  color:#333333;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
@@ -201,6 +260,7 @@ body{
 }
 
 .newsletter-subscribe p{
+  color: #FFF;
   font-size: 22px;
   line-height: 26px;
 }
@@ -208,7 +268,11 @@ body{
   border: #F2F2F2;
   border-radius: 4px 0 0 4px;
 }
-
+.phonnumber{
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase
+}
 .filter{
   background: #1506f1 url(../pictures/jpeg/filter_background.jpg) no-repeat;
   background-size: 100% 100%;
@@ -234,12 +298,16 @@ body{
   line-height: 24px;
   text-transform: capitalize;
 }
-.filter .price-range .slider-labels{
+.slider-labels{
+  color:#000;
+  opacity: 0.3;
   text-align: right;
   font-size: 18px;
   line-height: 24px
 }
-
+.accept{
+  border-radius: 0;
+}
 .reset{
   background:transparent;
   outline: none;
