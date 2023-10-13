@@ -17,11 +17,13 @@
     <div class="content">
       <header class="page-header" data-test="header">
         <nav class="navigation">
-          <a aria-current="page" class="nav-logo">
-            <img src="pictures/svg/logo.svg" alt="логотип" width="140" height="70">
-          </a>
-          <div class="navigation-wrap">
-            <ul class="navigation-list">
+
+          <div class="navigation-wrapper left-part">
+            <a aria-current="page" class="nav-logo">
+              <img src="pictures/svg/logo.svg" alt="логотип" width="140" height="70">
+            </a>
+
+            <ul class="navigation-list navigation-page">
               <li class="navigation-item">
                 <a href="index.html">
                   Главная
@@ -40,9 +42,11 @@
                 </a>
               </li>
             </ul>
-            <div class="navigation-2">
+          </div>
+
+          <div class="navigation-wrapper right-part">
             <ul class="navigation-list navigation-user">
-              <li class="navigation-item">
+              <li class="navigation-item find-link">
                   <a href="#">
                     <span class="visually-hidden">
                       Выбрать гостиницу
@@ -50,7 +54,7 @@
                   </a>
               </li>
 
-              <li class="navigation-item">
+              <li class="navigation-item like">
                 <a href="#">
                   <span class="visually-hidden">
                     Добавить в избранное
@@ -58,12 +62,13 @@
                 </a>
               </li>
             </ul>
-            <a href="#" class="button-a gray-button">
-              <span class="here">
+
+            <a href="#" class="button-a gray-button here">
+              <span>
                 Хочу сюда!
               </span>
             </a>
-            </div>
+
           </div>
         </nav>
       </header>
@@ -72,26 +77,30 @@
         <h1 class="visually-hidden">
           Седона
         </h1>
-        <div class="welcome-hero">
+        <div class="welcome-hero-wrapper">
           <img src="pictures/svg/welcome.svg"  height="352" width="458" alt="welcome to the gorgeous Secona because the grand Canyon sucks!">
         </div>
           <section class="advanteges" data-test="advantages">
-            <p class="description">
-              Седона — небольшой городок в Аризоне, заслуживающий большего!
-            </p>
-            <h2 class="reasons-title">
-              Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
-            </h2>
+            <div class="reasons-wrapper">
+              <p class="description">
+                Седона — небольшой городок в Аризоне, заслуживающий большего!
+              </p>
+              <h2 class="reasons-title">
+                Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
+              </h2>
+            </div>
 
           <ul class="advanteges-list">
               <li class="advanteges-item">
                 <div class="town">
-                  <h3>
-                    Настоящий городок
-                  </h3>
-                  <p>
-                    Седона — не аттракцион для туристов, там течёт своя жизнь
-                  </p>
+                  <div class="advantages-text-wrapper">
+                    <h3>
+                      Настоящий городок
+                    </h3>
+                    <p>
+                      Седона — не аттракцион для туристов, там течёт своя жизнь
+                    </p>
+                  </div>
                   <img src="pictures/jpeg/sedona_town.jpg" width="800" alt="городок Седона">
                 </div>
               <ul class="nested-advanteges-list">
