@@ -181,24 +181,24 @@ a{
 }
 
 .advantages-text-wrapper{
-  display: flex;
-  flex-direction: column;
-  justify-content: cent
-  er;
-  align-self: center;
+  display: grid;
+  justify-content: center;
+  gap: 30px;
 }
 
 .advanteges-item p{
   color: #FFF;
 }
 .town{
-  display: flex;
-  background-color: #82B3D3;
-  justify-content: center;
+  display: grid;
   align-items: center;
+  background-color: #82B3D3;
+  grid-template-columns: 400px auto;
 }
 .advanteges-item h3{
+  display:  block;
   width: 175px;
+  margin: 0 auto;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -206,6 +206,8 @@ a{
 }
 
 .advanteges-item p{
+  display: block;
+  width: 230px;
   align-self: stretch;
   font-size: 18px;
   line-height: 21px;
@@ -213,10 +215,22 @@ a{
 .advanteges-item img{
   display: block;
 }
+
+.nested-advanteges-list{
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+}
+
 .nested-advanteges-items{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 385px;
   background-color: #83B3D31F;
 }
 .nested-advanteges-items h3{
+  display:block;
   color: #000;
   font-size: 24px;
   font-weight: 700;
@@ -232,6 +246,10 @@ a{
   background-color: rgba(131, 179, 211, 0.20);
 }
 .devil-bridge{
+
+  display: grid;
+  align-items: center;
+  grid-template-columns:auto 400px;
   color: #FFF;
   background-color: #82B3D3;
 }
