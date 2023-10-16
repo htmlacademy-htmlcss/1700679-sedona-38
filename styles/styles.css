@@ -128,7 +128,6 @@ a{
 
 .like{
   background: url(../pictures/svg/heart.svg) no-repeat;
-  margin-bottom: ;
 }
 
 .welcome-hero-wrapper{
@@ -229,6 +228,7 @@ a{
   height: 385px;
   background-color: #83B3D31F;
 }
+
 .nested-advanteges-items h3{
   display:block;
   color: #000;
@@ -246,7 +246,6 @@ a{
   background-color: rgba(131, 179, 211, 0.20);
 }
 .devil-bridge{
-
   display: grid;
   align-items: center;
   grid-template-columns:auto 400px;
@@ -275,7 +274,13 @@ a{
   line-height: 26px;
   font-weight: 400;
 }
-
+.adition-advanteges-list{
+  display: grid;
+  height: 385px;
+  grid-template-columns: 400px 400px 400px;
+  justify-content: center;
+  align-items: center;
+}
 .adition-advateges-item h3{
   text-align: center;
   font-weight: 700;
@@ -283,12 +288,19 @@ a{
   text-transform: uppercase;
   line-height: 28px;
 }
-
+.adition-advateges-item{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  height: 385px;
+}
 .adition-advateges-item:nth-child(odd){
   background-color: #83B3D31F;
 }
 
 .adition-advateges-item p{
+  max-width: 230px;
   text-align: center;
   font-size: 18px;
   line-height: 21px;
