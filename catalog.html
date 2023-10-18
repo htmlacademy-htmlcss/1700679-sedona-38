@@ -87,14 +87,14 @@
                   Гостиницы
                 </a>
               </div>
+              <h2 class="visually-hidden">
+                Фильтр для выбора гостиницы
+              </h2>
           </header>
 
-          <h2 class="visually-hidden">
-            Фильтр для выбора гостиницы
-          </h2>
           <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="filter-group">
-              <legend class="infrastructure-title">
+              <legend class="infrastructure-title filter-title">
                 Инфаструктура:
               </legend>
               <ul class="infrastructure-list">
@@ -118,7 +118,7 @@
             </fieldset>
 
             <fieldset class="accommodation-group">
-              <legend class="accommodation-title">
+              <legend class="accommodation-title filter-title">
                 Тип Жилья:
               </legend>
               <ul class="accommodation-list">
@@ -143,27 +143,31 @@
               </ul>
             </fieldset>
 
-              <fieldset class="filter-group">
-                <legend class="slider-title">
-                  Стоимость, ₽:
-                </legend>
-              <label for="minimum-number" class="slider-labels">
-                От:
-              </label>
-              <input type="number" placeholder="От:" value="0" name="minimum-number" class="minimum-price" id="minimum-number">
-              <label for="maximum-number" class="slider-labels">
-                  До:
-              </label>
-              <input type="number" placeholder="До:" value="9000" name="maximum-number" class="maximum-price" id="maximum-number">
+            <fieldset class="filter-group price-slider">
+              <legend class="slider-title filter-title">
+                Стоимость, ₽:
+              </legend>
+              <div class="slider-input">
+                <label for="minimum-number" class="slider-labels">
+                  От:
+                </label>
+                <input type="number" placeholder="От:" value="0" name="minimum-number" class="minimum-price" id="minimum-number">
+                <label for="maximum-number" class="slider-labels">
+                    До:
+                </label>
+                <input type="number" placeholder="До:" value="9000" name="maximum-number" class="maximum-price" id="maximum-number">
+              </div>
               <input type="range" min="0" max="9000" id="slider" step="1000" value="7000" name="slider" class="slider">
-              </fieldset>
+            </fieldset>
 
-            <button class="standart-button blue-batton accept small" type="submit">
-              Применить
-            </button>
-            <button class="standart-button small reset" type="reset">
-              Сбросить
-            </button>
+            <div class="filter-button-wrapper">
+              <button class="standart-button blue-batton accept small" type="submit">
+                Применить
+              </button>
+              <button class="standart-button small reset" type="reset">
+                Сбросить
+              </button>
+            </div>
           </form>
         </section>
 
@@ -221,12 +225,14 @@
                     <h3 class="product-card-title">
                       Amara Resort & Spa
                     </h3>
-                    <span class="accommodation-type">
-                      Гостиница
-                    </span>
-                    <b class="price-hotel">
-                      От 4000 ₽
-                    </b>
+                    <div class="porduct-card-texts">
+                      <span class="accommodation-type">
+                        Гостиница
+                      </span>
+                      <b class="price-hotel">
+                        От 4000 ₽
+                      </b>
+                    </div>
                     <a href="#" class="button-a">
                       <span class="more-info">
                         Подробнее
