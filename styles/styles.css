@@ -1,9 +1,9 @@
-/* PT Sans */
+/* fonts */
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  src: url(../fonts/ptsans-700.woff2) format("woff2");
   font-display: swap;
 }
 
@@ -11,97 +11,109 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  src: url(../fonts/ptsans-400.woff2) format("woff2");
   font-display: swap;
 }
-/* standarts */
-body{
+
+/* standards */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  align-items: flex-start;
   font-family: Pt Sans;
-  background: #F2F2F2;
+  background: #f2f2f2;
   padding: 0 40px;
 }
-ul{
+
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.content{
-  background: #FFF;
+
+.content {
+  margin: 0 auto;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
+  background: #fff;
   width: 1200px;
 }
-p{
+
+.main {
+  flex-grow: 1;
+  min-height: 100%;
+}
+
+.page-footer {
+  position: sticky;
+  bottom: 0;
+  background: #FFF;
+  display: flex;
+  max-width: 1200px;
+  height: 120px;
+  padding: 40px 70px 30px 70px;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
   margin: 0;
-  color:#333333;
+  color: #333;
 }
-span{
-  color: #333333;
-}
-b{
-  color:#333333;
-}
-a{
+
+a {
   margin: 0;
   text-decoration: none;
 }
-.standart-button{
-  color: #FFF;
+
+span,
+b {
+  color: #333;
+}
+/* Убираем стандартные стили для кнопки в Chrome */
+button::-webkit-inner-spin-button,
+button::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Убираем отступы вокруг input и button */
+input[type="email"], button[type="submit"] {
+  margin: 0;
+}
+
+.standart-button {
+  color: #fff;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
   border-radius: 4px;
-  background-color: #82B3D3;
-  border: #82B3D3;
+  background-color: #82b3d3;
+  border: #82b3d3;
 }
 
-.gray-button{
+.gray-button {
   background-color: #756157;
   border: #756157;
 }
-.big-button{
+
+.big-button {
   font-size: 20px;
   line-height: 24px;
 }
-.green-button{
-  background-color: #7DB54F;
+
+.green-button {
+  background-color: #7db54f;
 }
 
-.navigation{
-  display: flex;
-  justify-content: space-between;
-}
-
-.navigation-wrapper{
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-}
-.navigation-list{
-  display: flex;
-}
-.navigation-user{
-  padding: 22px 12px;
-}
-.left-part{
-  margin-left: 70px;
-}
-.right-part{
-  margin-right: 70px;
-}
-.navigation a{
-  color: #000000;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-  text-transform: capitalize;
-}
-.navigation-item{
-  padding: 0 20px;
-}
-.navigation-item:last-child{
-  padding: 0;
-}
-.button-a{
+.button-a {
   display: flex;
   background-color: #756157;
   padding: 8px 34px;
@@ -111,36 +123,93 @@ a{
   justify-content: center;
 }
 
-.button-a span{
-  color: white;
+.button-a span {
+  color: #fff;
   text-transform: uppercase;
 }
-.here span{
+
+/* header */
+.page-header {
+  margin: 0;
+  padding: 0;
+  height: 64px;
+  flex-shrink: 0;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-wrapper {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.nav-logo {
+  display: block;
+}
+
+.navigation-list {
+  display: flex;
+}
+
+.navigation-user {
+  padding: 22px 12px;
+}
+
+.left-part {
+  margin-left: 70px;
+}
+
+.right-part {
+  margin-right: 70px;
+}
+
+.navigation a {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.navigation-item {
+  padding: 0 20px;
+}
+
+.navigation-item:last-child {
+  padding: 0;
+}
+
+.here span {
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
   align-self: flex-start;
 }
 
-.find-link{
+.find-link {
   background: url(../pictures/svg/search.svg) no-repeat;
 }
 
-.like{
+.like {
   background: url(../pictures/svg/heart.svg) no-repeat;
 }
 
-.welcome-hero-wrapper{
+/* hero */
+.welcome-hero-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 485px;
-  background-image: url(../pictures/svg/whiteline.svg), url(../pictures/jpeg/sedona_background.jpg) ;
+  background-image: url(../pictures/svg/whiteline.svg), url(../pictures/jpeg/sedona_background.jpg);
   background-position: bottom, top;
   background-repeat: no-repeat, no-repeat;
 }
 
-.reasons-wrapper{
+.reasons-wrapper {
   margin: 0;
   display: flex;
   padding: 69px 0;
@@ -151,7 +220,7 @@ a{
   margin-bottom: 21px;
 }
 
-.description{
+.description {
   margin: 0;
   width: 620px;
   font-size: 30px;
@@ -160,43 +229,37 @@ a{
   font-weight: 700;
 }
 
-.reasons-title{
+.reasons-title {
   margin: 0;
-  color: #333333;
+  color: #333;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
 }
 
-.advanteges{
-  color: #FFFFFF;
-  text-align: center;
-}
-
-.advanteges h2{
-  font-size: 22px;
-  line-height: 26px;
-  font-weight: 400;
-}
-
-.advantages-text-wrapper{
+.advantages-text-wrapper {
   display: grid;
   justify-content: center;
   gap: 30px;
 }
 
-.advanteges-item p{
-  color: #FFF;
+.advanteges-item p {
+  text-align: center;
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  line-height: 21px;
 }
-.town{
+
+.town {
   display: grid;
   align-items: center;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   grid-template-columns: 400px auto;
 }
-.advanteges-item h3{
-  display:  block;
-  width: 175px;
+
+.advanteges-item h3 {
+  text-align: center;
   margin: 0 auto;
   font-size: 24px;
   font-weight: 700;
@@ -204,56 +267,54 @@ a{
   text-transform: uppercase;
 }
 
-.advanteges-item p{
-  display: block;
-  width: 230px;
-  align-self: stretch;
-  font-size: 18px;
-  line-height: 21px;
-}
-.advanteges-item img{
+.advanteges-item img {
   display: block;
 }
 
-.nested-advanteges-list{
+.nested-advanteges-list {
   display: grid;
   grid-template-columns: 400px 400px 400px;
 }
 
-.nested-advanteges-items{
+.nested-advanteges-items {
   display: grid;
   justify-content: center;
   align-items: center;
   gap: 30px;
   height: 385px;
-  background-color: #83B3D31F;
+  background-color: #83b3d31f;
 }
 
-.nested-advanteges-items h3{
-  display:block;
+.nested-advanteges-items h3 {
+  text-align: center;
+  display: block;
   color: #000;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
 }
-.nested-advanteges-items p{
-  color: #333333;
+
+.nested-advanteges-items p {
+  color: #333;
   font-size: 18px;
   line-height: 21px;
-}
-.nested-advanteges-items:nth-child(even){
-  background-color: rgba(131, 179, 211, 0.20);
-}
-.devil-bridge{
-  display: grid;
-  align-items: center;
-  grid-template-columns:auto 400px;
-  color: #FFF;
-  background-color: #82B3D3;
+  text-align: center;
 }
 
-.come-to-sedona{
+.nested-advanteges-items:nth-child(even) {
+  background-color: rgba(131, 179, 211, 0.20);
+}
+
+.devil-bridge {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 400px;
+  color: #fff;
+  background-color: #82b3d3;
+}
+
+.come-to-sedona {
   text-align: center;
   font-weight: 700;
   font-size: 30px;
@@ -261,191 +322,215 @@ a{
   text-transform: uppercase;
 }
 
-.good-service{
+.good-service {
   text-align: center;
-  color:#333333;
+  color: #333;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
 }
 
-.adition-advateges h2{
-  font-size: 22px;
-  line-height: 26px;
-  font-weight: 400;
-}
-.adition-advanteges-list{
+.adition-advanteges-list {
   display: grid;
   height: 385px;
   grid-template-columns: 400px 400px 400px;
   justify-content: center;
   align-items: center;
 }
-.adition-advateges-item h3{
+
+.adition-advateges-item h3 {
   text-align: center;
   font-weight: 700;
   font-size: 24px;
   text-transform: uppercase;
   line-height: 28px;
 }
-.adition-advateges-item{
+
+.adition-advateges-item {
   display: flex;
   flex-direction: column;
   gap: 10px;
   justify-content: center;
   height: 385px;
 }
-.adition-advateges-item:nth-child(odd){
-  background-color: #83B3D31F;
+
+.adition-advateges-item:nth-child(odd) {
+  background-color: #83b3d31f;
 }
 
-.adition-advateges-item p{
-  max-width: 230px;
+.adition-advateges-item p {
   text-align: center;
   font-size: 18px;
   line-height: 21px;
 }
 
-
-.find-accommodation{
+.find-accommodation {
   text-align: center;
-}
-.find-accommodation span{
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 36px;
-  text-transform: uppercase;
+  display: flex;
+  padding: 96px 304px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
 }
 
-.find-accommodation p{
+.find-accommodation p {
   font-size: 22px;
   line-height: 26px;
 }
 
-
-.newsletter-subscribe{
+.newsletter-subscribe {
   background: #5245fa url(../pictures/jpeg/subscribe_background.jpg) no-repeat;
-  color: #FFFFFF;
-}
-
-.newsletter-subscribe{
+  color: #fff;
+  display: flex;
+  padding: 96px 258px 104px 258px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   text-align: center;
 }
-.newsletter-subscribe h2{
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 36px;
-  text-transform: uppercase;
-}
 
-.newsletter-subscribe p{
-  color: #FFF;
+.newsletter-subscribe p {
+  color: #fff;
   font-size: 22px;
   line-height: 26px;
 }
-.newsletter-subscribe input{
-  border: #F2F2F2;
+
+.newsletter-subscribe input {
+  padding: 12px 20px;
+  font-size: 18px;
+  line-height: 24px;
+  gap: 260px;
+  border: #f2f2f2;
   border-radius: 4px 0 0 4px;
+  flex: 1 0 0;
 }
-.phonnumber{
+
+.phonnumber {
   font-size: 40px;
   line-height: 40px;
-  text-transform: uppercase
+  text-transform: uppercase;
 }
-.filter{
+
+.filter {
   background: #1506f1 url(../pictures/jpeg/filter_background.jpg) no-repeat;
   background-size: 100% 100%;
-  color: #FFF;
+  color: #fff;
 }
-.filter h1{
+
+.filter h1 {
   font-size: 60px;
   line-height: 78px;
 }
-.filter-form legend{
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-  text-transform: capitalize;
-}
-.filter-form .control-input{
+
+.filter-form .control-input {
   font-size: 18px;
-  line-height: 23px
+  line-height: 23px;
 }
-.filter .price-range .slider-title{
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-  text-transform: capitalize;
-}
-.slider-labels{
-  color:#000;
+
+.slider-labels {
+  color: #000;
   opacity: 0.3;
   text-align: right;
   font-size: 18px;
-  line-height: 24px
+  line-height: 24px;
 }
-.accept{
+
+.accept {
   border-radius: 0;
 }
-.reset{
-  background:transparent;
+
+.reset {
+  background: transparent;
   outline: none;
 }
 
-.sort h2{
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 36px;
-  text-transform: uppercase;
-}
-.select-wrapper option{
-  font-size: 18px;
-  line-height: 21px;
-}
-
-.product-card{
+.product-card {
   border-radius: 4px;
-  border: 1px solid #E6E6E6;
+  border: 1px solid #e6e6e6;
 }
 
-.more-info{
+.more-info {
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
 }
 
-.product-card-title{
+.product-card-title {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
 }
 
-.accommodation-type{
-  font-size: 18px;
-  line-height: 21px;
-}
-.price-hotel{
-  font-family: Pt sans;
+.price-hotel {
   text-align: right;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px
+  font: 400 18px/21px "Pt sans";
 }
-.rate{
+
+.rate {
   border-radius: 4px;
-  background-color: #F2F2F2;
-  background: #F2F2F2;
+  background-color: #f2f2f2;
+  background: #f2f2f2;
   text-align: center;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
 }
-.newsletter-subscribe-catalog{
+
+.newsletter-subscribe-catalog {
   background: none;
   color: #000;
 }
-.subscribe-button{
+
+.subscribe-button {
+  margin: 0;
+  padding: 8px 50px;
   border-radius: 0 4px 4px 0;
   line-height: 36px;
+}
+.newsletter-subscribe-form input,
+.newsletter-subscribe-form button {
+  margin: 0;
+}
+.advanteges h2,
+.adition-advateges h2 {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.find-accommodation span,
+.newsletter-subscribe h2,
+.sort h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.filter-form legend,
+.filter .price-range .slider-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.select-wrapper option,
+.accommodation-type {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+
+.social-list {
+  display: flex;
+}
+
+.footer-content-wrapper{
+  display: flex;
+  width: 1060px;
+  justify-content: space-between;
+  align-items: center;
 }
