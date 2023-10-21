@@ -211,6 +211,7 @@ input[type="email"], button[type="submit"] {
   justify-content: center;
   align-items: center;
   min-height: 485px;
+  background-color: #24d18f;
   background-image: url(../pictures/svg/whiteline.svg), url(../pictures/jpeg/sedona_background.jpg);
   background-position: bottom, top;
   background-repeat: no-repeat, no-repeat;
@@ -285,7 +286,7 @@ input[type="email"], button[type="submit"] {
 }
 
 .nested-advanteges-items {
-  padding: 103px 85px;
+  padding: 103px 80px;
   display: grid;
   align-items:center;
   gap: 30px;
@@ -363,6 +364,7 @@ input[type="email"], button[type="submit"] {
 .adition-advateges-item {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
   justify-content: center;
   height: 385px;
@@ -402,7 +404,8 @@ input[type="email"], button[type="submit"] {
 }
 
 .newsletter-subscribe {
-  background: #5245fa url(../pictures/jpeg/subscribe_background.jpg) no-repeat;
+  background: #24d18f url(../pictures/jpeg/subscribe_background.jpg) no-repeat;
+  background-size: 100% 100%;
   color: #fff;
   display: flex;
   padding: 96px 258px 104px 258px;
@@ -419,7 +422,7 @@ input[type="email"], button[type="submit"] {
   line-height: 26px;
 }
 
-.newsletter-subscribe input {
+.newsletter-subscribe input{
   padding: 12px 20px;
   font-size: 18px;
   line-height: 24px;
@@ -427,6 +430,15 @@ input[type="email"], button[type="submit"] {
   border: #f2f2f2;
   border-radius: 4px 0 0 4px;
   flex: 1 0 0;
+}
+
+.email-submit{
+  min-width: 452px;
+}
+
+.newsletter-button
+{
+  display: flex;
 }
 
 .phonnumber {
@@ -537,6 +549,23 @@ input[type="email"], button[type="submit"] {
   font-weight: 400;
 }
 
+.adition-advanteges-content-image::before{
+  content: '';
+  display: block;
+  width: 75px;
+  height: 75px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.home::before{
+  background-image: url(../pictures/svg/home.svg);
+}
+.food::before{
+  background-image: url(../pictures/svg/food.svg);
+}
+.souvenirs{
+  background-image: url(../pictures/svg/souvenirs.svg);
+}
 .find-accommodation span,
 .newsletter-subscribe h2,
 .sort h2 {
