@@ -207,9 +207,10 @@ input[type="email"], button[type="submit"] {
 /* hero */
 .welcome-hero-wrapper {
   display: flex;
+  flex-wrap:wrap;
   justify-content: center;
   align-items: center;
-  height: 485px;
+  min-height: 485px;
   background-image: url(../pictures/svg/whiteline.svg), url(../pictures/jpeg/sedona_background.jpg);
   background-position: bottom, top;
   background-repeat: no-repeat, no-repeat;
@@ -466,11 +467,18 @@ input[type="email"], button[type="submit"] {
   background: transparent;
   outline: none;
 }
-
+.products{
+  display: flex;
+  padding: 50px 70px 60px 70px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  align-self: stretch;
+}
 .product-card {
   display: flex;
-  width: 340px;
-  height: 438px;
+  max-width: 340px;
+  max-height: 438px;
   padding: 20px;
   flex-direction: column;
   align-items: flex-start;
@@ -619,9 +627,76 @@ input[type="email"], button[type="submit"] {
 }
 .product-list{
   display: flex;
-  height: 438px;
   align-items: flex-start;
   gap: 20px;
   align-self: stretch;
   flex-wrap: wrap;
+}
+.product-card-texts{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.product-card-buttons{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
+}
+.hotel-stars{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+.product-card-rate{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
+}
+
+.favourites{
+  display: flex;
+  padding: 8px 20px;
+  justify-content: center;
+  align-items: center;
+}
+.more-info-a{
+  padding: 8px 20px;
+}
+.content-divider{
+  border: 1px #E6E6E6 solid;
+  width: 100%;
+}
+.pagination{
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.pagination-item{
+  position: relative;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  background-color: #82B3D3;
+}
+.pagination-link{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  color: #FFF;
+}
+.pagination-current-link{
+  color: #000;
+}
+.pagination-current{
+  background-color: #FFF;
 }
