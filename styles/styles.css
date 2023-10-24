@@ -76,6 +76,7 @@ span,
 b {
   color: #333;
 }
+
 fieldset{
   border: none;
   padding: 0;
@@ -198,7 +199,7 @@ input[type="email"], button[type="submit"] {
 }
 .right-part .navigation-item{
   display: flex;
-  padding: 0px 12px;
+  padding: 0 12px;
   justify-content: center;
   align-items: center;
 }
@@ -514,20 +515,20 @@ input[type="email"], button[type="submit"] {
 }
 .products{
   display: flex;
-  padding: 50px 70px 60px 70px;
   flex-direction: column;
   align-items: flex-start;
   gap: 40px;
   align-self: stretch;
 }
+
 .product-card {
-  display: flex;
+  display: grid;
   max-width: 340px;
-  max-height: 438px;
-  padding: 20px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
+  align-items: center;
+  padding: 19px;
+  grid-template-columns: repeat(2, 140px);
+  grid-template-rows: 212px 1fr;
+  gap: 16px 20px;
   border-radius: 4px;
   border: 1px solid #e6e6e6;
 }
@@ -551,6 +552,10 @@ input[type="email"], button[type="submit"] {
 }
 
 .rate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 37px;
   border-radius: 4px;
   background-color: #f2f2f2;
   background: #f2f2f2;
@@ -560,10 +565,7 @@ input[type="email"], button[type="submit"] {
   text-transform: uppercase;
 }
 
-.newsletter-subscribe-catalog {
-  background: none;
-  color: #000;
-}
+
 
 .subscribe-button {
   margin: 0;
@@ -627,6 +629,10 @@ input[type="email"], button[type="submit"] {
 
 }
 
+.selected-button{
+  background-color: #7DB54F;
+}
+
 .soclials-item{
   display: flex;
   padding: 0 10px;
@@ -675,6 +681,20 @@ input[type="email"], button[type="submit"] {
   align-self: stretch;
 }
 
+.breadcrumbs-list{
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs-item{
+  min-width: 13px;
+  background-repeat: no-repeat;
+}
+
+.home-link{
+  background-image: url(../pictures/svg/home_page.svg);
+}
+
 .filter-title{
   margin-bottom: 32px;
 }
@@ -715,24 +735,17 @@ input[type="email"], button[type="submit"] {
   display: flex;
 }
 .product-list{
-  display: flex;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
   gap: 20px;
-  align-self: stretch;
-  flex-wrap: wrap;
+  margin-bottom: 80px;
 }
-.product-card-texts{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-self: stretch;
+.hotel-card-img,
+.product-card-title{
+  display: block;
+  grid-column: span 2;
 }
-.product-card-buttons{
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  align-self: stretch;
-}
+
 .hotel-stars{
   display: flex;
   align-items: center;
@@ -740,16 +753,16 @@ input[type="email"], button[type="submit"] {
   flex: 1 0 0;
   align-self: stretch;
 }
-.product-card-rate{
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  align-self: stretch;
-}
 
+.more-info{
+  background-color: #756157;
+  padding: 8px 26px;
+}
 .favourites{
+  width: 140px;
+  height: 36px;
   display: flex;
-  padding: 8px 20px;
+  padding: 8px 10px;
   justify-content: center;
   align-items: center;
 }
@@ -788,4 +801,13 @@ input[type="email"], button[type="submit"] {
 }
 .pagination-current{
   background-color: #FFF;
+}
+
+.newsletter-subscribe-catalog {
+  background: none;
+  color: #000;
+}
+
+.newsletter-subscribe-catalog p{
+  color: #333333;
 }

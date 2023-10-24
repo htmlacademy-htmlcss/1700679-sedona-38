@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <title>
       Каталог
@@ -46,14 +46,14 @@
 
             <div class="navigation-wrapper right-part">
             <ul class="navigation-list navigation-user">
-              <li class="navigation-item">
+              <li class="navigation-item find-link">
                   <a href="#">
                     <span class="visually-hidden">
                       Выбрать гостиницу
                     </span>
                   </a>
               </li>
-              <li class="navigation-item">
+              <li class="navigation-item like">
                 <a href="#">
                   <span class="visually-hidden">
                     Добавить в избранное
@@ -77,19 +77,25 @@
             <h1>
               Гостиницы Седоны
             </h1>
-            <div class="breadcrubs">
-                <a aria-current="page">
-                  <span class="visually-hidden">
-                    Вернуться назад
-                  </span>
-                </a>
-                <a href="#">
-                  Гостиницы
-                </a>
-              </div>
-              <h2 class="visually-hidden">
-                Фильтр для выбора гостиницы
-              </h2>
+            <div class="breadcrumbs">
+              <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-item home-link">
+                  <a aria-current="page">
+                    <span class="visually-hidden">
+                      Вернуться назад
+                    </span>
+                  </a>
+                </li>
+                <li class="breadcrumbs-item hotlels-breacrubs">
+                  <a href="#">
+                    Гостиницы
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <h2 class="visually-hidden">
+              Фильтр для выбора гостиницы
+            </h2>
           </header>
 
           <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
@@ -222,74 +228,58 @@
                   <a href="#" class="hotel-card-img">
                     <img class="product-card-image" width="300" height="212" src="pictures/jpeg/amararesortandspa.jpg" alt="Amara Resort & Spa">
                   </a>
-                    <h3 class="product-card-title">
-                      Amara Resort & Spa
-                    </h3>
-                    <div class="product-card-texts">
-                      <span class="accommodation-type">
-                        Гостиница
-                      </span>
-                      <b class="price-hotel">
-                        От 4000 ₽
-                      </b>
-                    </div>
-                    <div class="product-card-buttons">
-                      <a href="#" class="button-a more-info-a">
-                        <span class="more-info">
-                          Подробнее
-                        </span>
-                      </a>
-                      <button type="button" class="standart-button favourites">
-                        В избранное
-                      </button>
-                    </div>
-                    <div class="product-card-rate">
-                    <div class="hotel-stars" role="img" aria-label="4 звезды">
-                        <span class="visually-hidden">
-                          4 звезды
-                        </span>
-                      </div>
-                      <span class="rate">
-                        Рейтинг: 8,5
-                      </span>
-                    </div>
+                  <h3 class="product-card-title">
+                    Amara Resort &amp; Spa
+                  </h3>
+                    <span class="accommodation-type">
+                      Гостиница
+                    </span>
+                    <b class="price-hotel">
+                      От 4000 ₽
+                    </b>
+                  <button type="button" class="standart-button favourites more-info">
+                      Подробнее
+                  </button>
+                  <button type="button" class="standart-button favourites">
+                    В избранное
+                  </button>
+                  <div class="hotel-stars" role="img" aria-label="4 звезды">
+                    <span class="visually-hidden">
+                      4 звезды
+                    </span>
+                  </div>
+                  <span class="rate">
+                    Рейтинг: 8,5
+                  </span>
                 </li>
 
                 <li class="product-card">
                   <a href="#" class="hotel-card-img">
                     <img class="product-card-image"  width="300" height="212" src="pictures/jpeg/villasatpocodiablo.jpg" alt="Villas at Poco Diablo">
                   </a>
-                    <h3 class="product-card-title">
+                  <h3 class="product-card-title">
                     Villas at Poco Diablo
                   </h3>
-                  <div class="product-card-texts">
-                    <span class="accommodation-type">
-                      Гостиница
-                    </span>
-                    <b class="price-hotel">
-                      От 5000 ₽
-                    </b>
-                  </div>
-                  <div class="product-card-buttons">
-                  <a href="#" class="button-a more-info-a">
-                      <span class="more-info">
-                        Подробнее
-                      </span>
-                    </a>
-                    <button type="button" class="standart-button favourites">
-                      В избранное
-                    </button>
-                  </div>
-                  <div class="product-card-rate">
+                  <span class="accommodation-type">
+                    Гостиница
+                  </span>
+                  <b class="price-hotel">
+                    От 5000 ₽
+                  </b>
+                  <button type="button" class="standart-button favourites more-info">
+                    Подробнее
+                  </button>
+                  <button type="button" class="standart-button favourites selected-button">
+                    В избранном
+                  </button>
                   <div class="hotel-stars" role="img">
-                      <span class="visually-hidden">
-                        4 звезды
-                      </span>
-                    </div>
-                    <span class="rate">
-                      Рейтинг: 9,2
+                    <span class="visually-hidden">
+                      4 звезды
                     </span>
                   </div>
+                  <span class="rate">
+                    Рейтинг: 9,2
+                  </span>
                 </li>
 
                   <li class="product-card">
@@ -299,34 +289,26 @@
                       <h3 class="product-card-title">
                       Desert Quail Inn
                     </h3>
-                    <div class="product-card-texts">
-                      <span class="accommodation-type">
-                        Гостиница
-                      </span>
-                      <b class="price-hotel">
-                        От 2500 ₽
-                      </b>
-                    </div>
-                    <div class="product-card-buttons">
-                      <a href="#" class="button-a more-info-a">
-                        <span class="more-info">
-                          Подробнее
-                        </span>
-                      </a>
-                      <button type="button" class="standart-button favourites">
-                        В избранное
-                      </button>
-                    </div>
-                    <div class="product-card-rate">
-                      <div class="hotel-stars" role="img">
-                        <span class="visually-hidden">
-                          3 звезды
-                        </span>
-                      </div>
-                      <span class="rate">
-                        Рейтинг: 6,9
+                    <span class="accommodation-type">
+                      Гостиница
+                    </span>
+                    <b class="price-hotel">
+                      От 2500 ₽
+                    </b>
+                    <button type="button" class="standart-button more-info">
+                      Подробнее
+                    </button>
+                    <button type="button" class="standart-button favourites">
+                      В избранное
+                    </button>
+                    <div class="hotel-stars" role="img">
+                      <span class="visually-hidden">
+                        3 звезды
                       </span>
                     </div>
+                    <span class="rate">
+                      Рейтинг: 6,9
+                    </span>
                 </li>
                 <li class="product-card">
                   <a href="#" class="hotel-card-img">
@@ -335,34 +317,26 @@
                   <h3 class="product-card-title">
                     GreenTree Inn
                   </h3>
-                  <div class="product-card-texts">
-                    <span class="accommodation-type">
-                      Гостиница
-                    </span>
-                    <b class="price-hotel">
-                      От 1500 ₽
-                    </b>
-                  </div>
-                  <div class="product-card-buttons">
-                    <a href="#" class="button-a more-info-a">
-                      <span class="more-info">
-                        Подробнее
+                  <span class="accommodation-type">
+                    Гостиница
+                  </span>
+                  <b class="price-hotel">
+                    От 1500 ₽
+                  </b>
+                  <button type="button" class="standart-button favourites more-info">
+                    Подробнее
+                  </button>
+                  <button type="button" class="standart-button favourites">
+                    В избранное
+                  </button>
+                    <div class="hotel-stars"  role="img">
+                      <span class="visually-hidden">
+                        2 звезды
                       </span>
-                    </a>
-                      <button type="button" class="standart-button favourites">
-                        В избранное
-                      </button>
-                  </div>
-                      <div class="product-card-rate">
-                        <div class="hotel-stars"  role="img">
-                          <span class="visually-hidden">
-                            2 звезды
-                          </span>
-                        </div>
-                        <span class="rate">
-                          Рейтинг: 5,0
-                        </span>
                     </div>
+                    <span class="rate">
+                      Рейтинг: 5,0
+                    </span>
                 </li>
 
               </ul>
@@ -418,7 +392,7 @@
             Впишите свой e-mail
           </label>
           <div class="newsletter-button">
-            <input type="email" placeholder="Ваш e-mail" name="e-mail" id="e-mail" required><button type="submit" class="standart-button big-button subscribe-button">
+            <input class="email-submit" type="email" placeholder="Ваш e-mail" name="e-mail" id="e-mail" required><button type="submit" class="standart-button big-button subscribe-button">
               Подписаться
             </button>
           </div>
