@@ -85,10 +85,10 @@ fieldset{
 
 .visually-hidden {
   position: absolute;
-  width: 1px;
-  height: 1px;
+  width: 0;
+  height: 0;
   padding: 0;
-  margin: -1px;
+  margin: 0;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
@@ -157,33 +157,26 @@ input[type="email"], button[type="submit"] {
 
 .navigation {
   display: flex;
-  justify-content: space-between;
+  align-items: stretch;
+  margin: 0 70px;
 }
 
 .navigation-wrapper {
   display: flex;
-  align-items: center;
   flex-shrink: 0;
 }
 
 .nav-logo {
   display: block;
+  margin-right: 30px;
 }
 
 .navigation-list {
   display: flex;
 }
 
-.navigation-user {
-  padding: 22px 12px;
-}
-
-.left-part {
-  margin-left: 70px;
-}
-
 .right-part {
-  margin-right: 70px;
+  margin-left: auto;
 }
 
 .navigation a {
@@ -195,14 +188,18 @@ input[type="email"], button[type="submit"] {
 }
 
 .navigation-item {
+  max-height: 64px;
   padding: 0 20px;
 }
-.right-part .navigation-item{
+
+.navigation-item{
   display: flex;
   padding: 0 12px;
   justify-content: center;
   align-items: center;
 }
+
+
 .right-part .navigation-item a{
   display: flex;
   width: 20px;
@@ -212,23 +209,21 @@ input[type="email"], button[type="submit"] {
   align-items: center;
   gap: 10px;
 }
-.navigation-item:last-child {
-  padding: 0;
+
+.here{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 12px;
+  height: 64px;
 }
 
-.here span {
-  font-size: 16px;
+.here a{
+  color: #fff;
+  font-size: 23px;
   font-weight: 700;
   line-height: 20px;
-  align-self: flex-start;
-}
-
-.find-link {
-  background: url(../pictures/svg/search.svg) no-repeat;
-}
-
-.like {
-  background: url(../pictures/svg/heart.svg) no-repeat;
 }
 
 /* hero */
@@ -296,7 +291,9 @@ input[type="email"], button[type="submit"] {
 }
 
 .line{
-  border: 1px #000 solid;
+  margin: auto;
+  min-width: 60px;;
+  border: 2px #000 solid;
   opacity: 0.3;
 }
 
