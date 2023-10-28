@@ -85,14 +85,13 @@ fieldset{
 
 .visually-hidden {
   position: absolute;
-  width: 0;
-  height: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
   padding: 0;
-  margin: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
   border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Убираем стандартные стили для кнопки в Chrome */
@@ -162,6 +161,7 @@ input[type="email"], button[type="submit"] {
 }
 
 .navigation-wrapper {
+  max-width: 500px;
   display: flex;
   flex-shrink: 0;
 }
@@ -187,28 +187,33 @@ input[type="email"], button[type="submit"] {
   text-transform: capitalize;
 }
 
-.navigation-item {
-  max-height: 64px;
-  padding: 0 20px;
-}
-
-.navigation-item{
-  display: flex;
-  padding: 0 12px;
-  justify-content: center;
-  align-items: center;
-}
 
 
-.right-part .navigation-item a{
-  display: flex;
-  width: 20px;
-  height: 20px;
-  padding: 1px 0 0 1px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+.navigation-link{
+  font-family: Pt sans;
+  font-size: 28px;
+  line-height: 24px;
+  padding: 20px 10px;
+  position: relative;
+  display: block;
+  color: #000;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
 }
+
+
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  fill: #fff;
+}
+
+
 
 .here{
   display: flex;
@@ -225,6 +230,7 @@ input[type="email"], button[type="submit"] {
   font-weight: 700;
   line-height: 20px;
 }
+
 
 /* hero */
 .welcome-hero-wrapper {
@@ -807,4 +813,7 @@ input[type="email"], button[type="submit"] {
 
 .newsletter-subscribe-catalog p{
   color: #333333;
+}
+.right-part .navigation-link {
+  padding: 12px 12px;
 }
