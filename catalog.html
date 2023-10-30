@@ -35,8 +35,8 @@
                 </a>
               </li>
 
-              <li class="navigation-item current-page">
-                <a class="navigation-link" href="catalog.html">
+              <li class="navigation-item ">
+                <a class="navigation-link current-page" href="catalog.html">
                   Гостиницы
                 </a>
               </li>
@@ -87,14 +87,14 @@
             </h1>
             <div class="breadcrumbs">
               <ul class="breadcrumbs-list">
-                <li class="breadcrumbs-item home-link">
-                  <a aria-current="page">
+                <li class="breadcrumbs-item">
+                  <a aria-current="page" class="home-breadcrumbs">
                     <span class="visually-hidden">
                       Вернуться назад
                     </span>
                   </a>
                 </li>
-                <li class="breadcrumbs-item hotlels-breacrubs">
+                <li class="breadcrumbs-item">
                   <a href="#">
                     Гостиницы
                   </a>
@@ -139,19 +139,19 @@
                 <li class="accommodation-item">
                   <label class="control">
                     <input class="control-input" type="radio" name="type-of-housing" value="hotel" checked>
-                    Гостиница
+                      Гостиница
                   </label>
                 </li>
                 <li class="accommodation-item">
                   <label class="control">
                     <input class="control-input" type="radio" name="type-of-housing" value="motel">
-                    Мотель
+                      Мотель
                   </label>
                 </li>
-                <li class="filter-item">
+                <li class="accommodation-item">
                   <label class="control">
                     <input class="control-input" type="radio" name="type-of-housing" value="apartments">
-                    Апартаменты
+                      Апартаменты
                   </label>
                 </li>
               </ul>
@@ -167,7 +167,7 @@
                 </label>
                 <input type="number" placeholder="От:" value="0" name="minimum-number" class="minimum-price" id="minimum-number">
                 <label for="maximum-number" class="slider-labels">
-                    До:
+                  До:
                 </label>
                 <input type="number" placeholder="До:" value="9000" name="maximum-number" class="maximum-price" id="maximum-number">
               </div>
@@ -175,7 +175,7 @@
             </fieldset>
 
             <div class="filter-button-wrapper">
-              <button class="standart-button blue-batton accept small" type="submit">
+              <button class="standart-button accept" type="submit">
                 Применить
               </button>
               <button class="standart-button small reset" type="reset">
@@ -207,21 +207,21 @@
               </div>
               <ul class="sort-type-list">
                 <li class="sort-type-item">
-                  <a href="#" class="button button-light">
+                  <a href="#" class="button-table table selected">
                     <span class="visually-hidden">
                       Переключить элементы таблицей
                     </span>
                   </a>
                 </li>
                 <li class="sort-type-item">
-                  <a class="button" href="#">
+                  <a class="button-table big-picture" href="#">
                     <span class="visually-hidden">
                       Показать элементы карточками
                     </span>
                   </a>
                 </li>
                 <li class="sort-type-item">
-                  <a class="button" href="#">
+                  <a class="button-table list" href="#">
                     <span class="visually-hidden">
                       Показать элементы списком
                     </span>
@@ -290,33 +290,33 @@
                   </span>
                 </li>
 
-                  <li class="product-card">
-                    <a href="#" class="hotel-card-img">
-                      <img class="product-card-image"  width="300" height="212" src="pictures/jpeg/desertquailinn.jpg" alt="Desert Quail Inn">
-                    </a>
-                      <h3 class="product-card-title">
-                      Desert Quail Inn
-                    </h3>
-                    <span class="accommodation-type">
-                      Гостиница
+                <li class="product-card">
+                  <a href="#" class="hotel-card-img">
+                    <img class="product-card-image"  width="300" height="212" src="pictures/jpeg/desertquailinn.jpg" alt="Desert Quail Inn">
+                  </a>
+                    <h3 class="product-card-title">
+                    Desert Quail Inn
+                  </h3>
+                  <span class="accommodation-type">
+                    Гостиница
+                  </span>
+                  <b class="price-hotel">
+                    От 2500 ₽
+                  </b>
+                  <button type="button" class="standart-button more-info">
+                    Подробнее
+                  </button>
+                  <button type="button" class="standart-button favourites">
+                    В избранное
+                  </button>
+                  <div class="hotel-stars" role="img">
+                    <span class="visually-hidden">
+                      3 звезды
                     </span>
-                    <b class="price-hotel">
-                      От 2500 ₽
-                    </b>
-                    <button type="button" class="standart-button more-info">
-                      Подробнее
-                    </button>
-                    <button type="button" class="standart-button favourites">
-                      В избранное
-                    </button>
-                    <div class="hotel-stars" role="img">
-                      <span class="visually-hidden">
-                        3 звезды
-                      </span>
-                    </div>
-                    <span class="rate">
-                      Рейтинг: 6,9
-                    </span>
+                  </div>
+                  <span class="rate">
+                    Рейтинг: 6,9
+                  </span>
                 </li>
                 <li class="product-card">
                   <a href="#" class="hotel-card-img">
@@ -346,9 +346,8 @@
                       Рейтинг: 5,0
                     </span>
                 </li>
-
               </ul>
-              <div class="content-divider"></div>
+
               <ul class="pagination">
                 <li class="pagination-item pagination-current">
                   <a class="pagination-link pagination-current-link">
@@ -413,24 +412,24 @@
             <h2 class="visually-hidden">
               Наши соцсети
             </h2>
-            <ul class="social-list">
-              <li class="soclials-item vk">
-                <a href="https://vk.com/htmlacademy">
+            <ul class="socials-list">
+              <li class="socials-item ">
+                <a href="https://vk.com/htmlacademy" class="socials-link vk">
                   <span class="visually-hidden">
                     Ссылка на нас в vk
                   </span>
                 </a>
               </li>
-              <li class="soclials-item telegram">
-                <a href="https://t.me/htmlacademy">
+              <li class="socials-item">
+                <a href="https://t.me/htmlacademy" class="socials-link telegram">
                   <span class="visually-hidden">
                     Ссылка на нас в telegram
                   </span>
                 </a>
               </li>
-              <li class="soclials-item youtube">
-                <a href="https://www.youtube.com/user/htmlacademyru">
-                  <span class="visually-hidden">
+              <li class="socials-item youtube">
+                <a href="https://www.youtube.com/user/htmlacademyru" class="socials-link youtube">
+                  <span class="visually-hidden" >
                     Ссылка на нас в youtube
                   </span>
                 </a>
@@ -443,8 +442,8 @@
             <span class="visually-hidden">
               Наш телефон
             </span>
-            <a href="tel:+78128121212">
-            <span class="phonnumber">
+            <a href="tel:+78128121212" class="phonnumber">
+            <span>
               +7 (812) 812-12-12
             </span>
           </a>
