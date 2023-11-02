@@ -29,11 +29,8 @@ img {
 
 body {
   margin: 0;
-  display: flex;
-  flex-direction: column;
   font-family: Pt Sans, sans-serif;
   background: #f2f2f2;
-  padding: 0 40px;
 }
 
 .content {
@@ -41,12 +38,13 @@ body {
   flex-direction: column;
   min-height: 100%;
   margin: 0 auto;
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
   background: #fff;
   max-width: 1200px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
 }
 
 .main-page {
+  background-color: #FFF;
   flex-grow: 1;
   width: 1200px;
 }
@@ -140,7 +138,7 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  max-width: 320px;
+  max-width: 220px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -181,18 +179,19 @@ body {
 }
 
 .button-overflow-wrapper {
+  margin-left: 20px;
+  max-width: 200px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .navigation-here-button{
-  max-height: 36px;
+  margin-top: 14px;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
   padding: 8px 34px;
-  max-width: 220px;
 }
 
 
@@ -203,6 +202,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 485px;
+  padding: 25px 371px 82px 371px;
   background-color: #24d18f;
   background-image: url(../pictures/svg/whiteline.svg), url(../pictures/jpeg/sedona_background.jpg);
   background-position: bottom, bottom;
@@ -227,7 +227,7 @@ body {
 
 .reasons-title {
   margin: 0;
-  margin-bottom: 69px;
+  margin-bottom: 90px;
   color: #333;
   font-size: 22px;
   font-weight: 400;
@@ -248,42 +248,39 @@ body {
   color: #FFF;
   display: grid;
   align-items: center;
-  background-color: #82b3d3;
   grid-template-columns: 400px auto;
 }
 
+.blue-card h3::after{
+  background-color: #FFF;
+}
 
 .advantages-text-wrapper {
-  display: grid;
-  justify-content: center;
-  gap: 60px;
+  padding: 103px 83px;
+  background-color: #82b3d3;
 }
 
 .nested-advanteges-list {
+  background-color: #FFF;
   color: #FFF;
   padding: 0;
+  margin: 0;
   list-style-type: none;
   display: grid;
   grid-template-columns: 400px 400px 400px;
-}
-
-.advanteges-title{
-  min-height: calc(100% + 30px + 2px);
-  position: relative;
-  display: inline-block;
+  min-height: 385px;
 }
 
 .advanteges-title::after{
   content: '';
-  position: absolute;
-  left: 50%;
-  bottom: 0;
+  display: block;
+  margin: 0  auto 0 auto;
   width: 60px;
-  transform: translate(-50%);
   height: 2px;
-  margin-top: 30px;
   background-color: #000;
   opacity: 0.3;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .advanteges-list{
@@ -307,11 +304,6 @@ body {
 
 .nested-advanteges-items {
   text-align: center;
-  padding: 0 80px;
-  display: grid;
-  align-items:center;
-  justify-content: center;
-  min-height: 385px;
   background-color: #83b3d31f;
 }
 
@@ -343,6 +335,8 @@ body {
 }
 
 .come-to-sedona {
+  padding: 0;
+  margin: 0;
   text-align: center;
   font-weight: 700;
   font-size: 30px;
@@ -351,35 +345,32 @@ body {
 }
 
 .good-service {
+  margin: 0;
+  padding: 0;
   text-align: center;
   color: #333;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
 }
+
 .additon-advanteges-wrapper{
   display: flex;
-  padding: 64px 0;
+  padding: 64px 340px;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 20px;
 }
+
 .adition-advanteges-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
   display: grid;
   height: 385px;
   grid-template-columns: 400px 400px 400px;
-  justify-content: center;
   align-items: center;
 }
 
-.adition-advateges-item h3 {
-  text-align: center;
-  font-weight: 700;
-  font-size: 24px;
-  text-transform: uppercase;
-  line-height: 28px;
-}
 
 .adition-advateges-item {
   display: flex;
@@ -390,11 +381,21 @@ body {
   height: 385px;
 }
 
+.adition-advateges-item h3 {
+  margin: 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 28px;
+}
+
 .adition-advateges-item:nth-child(odd) {
   background-color: #83b3d31f;
 }
 
 .adition-advateges-item p {
+  margin: 0;
   text-align: center;
   font-size: 18px;
   line-height: 21px;
@@ -579,7 +580,7 @@ body {
   font-weight: 400;
 }
 
-.adition-advanteges-content-image::before{
+.adition-advanteges-title::before{
   content: '';
   display: block;
   width: 75px;
@@ -587,15 +588,19 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .home::before{
   background-image: url(../pictures/svg/home.svg);
 }
+
 .food::before{
   background-image: url(../pictures/svg/food.svg);
 }
-.souvenirs{
+
+.souvenirs::before{
   background-image: url(../pictures/svg/souvenirs.svg);
 }
+
 .find-accommodation span,
 .newsletter-subscribe h2,
 .sort h2 {
