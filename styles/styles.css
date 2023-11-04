@@ -197,17 +197,16 @@ body {
 
 /* hero */
 .welcome-hero-wrapper {
-  display: flex;
-  flex-wrap:wrap;
-  justify-content: center;
-  align-items: center;
-  min-height: 485px;
-  padding: 25px 371px 82px 371px;
+  padding: 51px 371px 82px 371px;
   background-color: #24d18f;
   background-image: url(../pictures/svg/whiteline.svg), url(../pictures/jpeg/sedona_background.jpg);
   background-position: bottom, bottom;
   background-repeat: no-repeat, no-repeat;
   background-size: auto auto ,100% 100%;
+}
+
+.welcome-hero-wrapper img{
+  display: block;
 }
 
 .advanteges{
