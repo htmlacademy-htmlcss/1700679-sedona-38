@@ -69,20 +69,20 @@
 
         <section class="filter" data-test="filter">
           <header class="header-filter">
-            <h1>
+            <h1 class="filter-main-title">
               Гостиницы Седоны
             </h1>
             <div class="breadcrumbs">
               <ul class="breadcrumbs-list">
                 <li class="breadcrumbs-item">
-                  <a aria-current="page" class="home-breadcrumbs">
+                  <a aria-current="page" class="breadcrumbs-link home-breadcrumbs">
                     <span class="visually-hidden">
                       Вернуться назад
                     </span>
                   </a>
                 </li>
                 <li class="breadcrumbs-item">
-                  <a href="#">
+                  <a class="breadcrumbs-link" href="#">
                     Гостиницы
                   </a>
                 </li>
@@ -101,17 +101,17 @@
               <ul class="infrastructure-list">
                 <li class="infrastructure-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="facilities" value="pool" checked>Бассейн
+                    <input class="control-input checkbox-button" type="checkbox" name="facilities" value="pool" checked>Бассейн
                   </label>
                 </li>
                 <li class="infrastructure-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="facilities" value="parking" checked>Парковка
+                    <input class="control-input checkbox-button" type="checkbox" name="facilities" value="parking" checked>Парковка
                   </label>
                 </li>
                 <li class="infrastructure-item">
                   <label class="control">
-                  <input class="control-input" type="checkbox" name="facilities" value="wi-fi">
+                  <input class="control-input checkbox-button" type="checkbox" name="facilities" value="wi-fi">
                     Wi-Fi
                   </label>
                 </li>
@@ -124,19 +124,19 @@
               <ul class="accommodation-list">
                 <li class="accommodation-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="type-of-housing" value="hotel" checked>
+                    <input class="control-input radio-input" type="radio" name="type-of-housing" value="hotel" checked>
                       Гостиница
                   </label>
                 </li>
                 <li class="accommodation-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="type-of-housing" value="motel">
+                    <input class="control-input radio-input" type="radio" name="type-of-housing" value="motel">
                       Мотель
                   </label>
                 </li>
                 <li class="accommodation-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="type-of-housing" value="apartments">
+                    <input class="control-input radio-input" type="radio" name="type-of-housing" value="apartments">
                       Апартаменты
                   </label>
                 </li>
@@ -174,7 +174,7 @@
         <section class="catalog" data-test="catalog">
 
             <div class="sort">
-              <h2 class="hotel-counter">
+              <h2 class="big-text hotel-counter">
                 Найдено гостиниц: 38
               </h2>
                 <span class="visually-hidden" >Сортировка</span>
@@ -278,7 +278,7 @@
                   <a href="#" class="hotel-card-img">
                     <img class="product-card-image"  width="300" height="212" src="pictures/jpeg/desertquailinn.jpg" alt="Desert Quail Inn">
                   </a>
-                    <h3 class="product-card-title">
+                  <h3 class="product-card-title">
                     Desert Quail Inn
                   </h3>
                   <span class="accommodation-type">
@@ -287,7 +287,7 @@
                   <b class="price-hotel">
                     От 2500 ₽
                   </b>
-                  <button type="button" class="standart-button more-info">
+                  <button type="button" class="standart-button favourites more-info">
                     Подробнее
                   </button>
                   <button type="button" class="standart-button favourites">
@@ -376,7 +376,7 @@
         <h2>
           Подпишитесь на рассылку
         </h2>
-        <p>
+        <p class="text-bottom">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
         <form class="newsletter-subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -424,7 +424,7 @@
           <span class="visually-hidden">
             Наш телефон
           </span>
-          <a href="tel:+78128121212">
+          <a class="phone-link" href="tel:+78128121212">
           <span class="phonnumber">
             +7 (812) 812-12-12
           </span>
@@ -435,7 +435,7 @@
           Наш партнёр
         </p>
         <a href="https://htmlacademy.ru/">
-          <img src="pictures/svg/htmlacademylogo.svg" width="115" height="33" alt="htmlacademy логотип">
+          <img class="htmlacademylogo" src="pictures/svg/htmlacademylogo.svg" width="115" height="33" alt="htmlacademy логотип">
         </a>
       </div>
   </footer>
