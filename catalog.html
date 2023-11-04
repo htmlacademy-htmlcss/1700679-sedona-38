@@ -20,7 +20,7 @@
             </a>
             <ul class="navigation-list navigation-page">
               <li class="navigation-item">
-                <a class="navigation-link current-page" href="index.html">
+                <a class="navigation-link" href="index.html">
                   Главная
                 </a>
               </li>
@@ -29,7 +29,7 @@
                   О Седоне
                 </a>
               </li>
-              <li class="navigation-item">
+              <li class="navigation-item current-page">
                 <a class="navigation-link" href="catalog.html">
                   Гостиницы
                 </a>
@@ -92,9 +92,9 @@
               Фильтр для выбора гостиницы
             </h2>
           </header>
-
           <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="infrastructure-group">
+            <div class="settings-overflow-wrapper">
+            <fieldset class="infrastructure-group group-fieldset">
               <legend class="infrastructure-title filter-title">
                 Инфаструктура:
               </legend>
@@ -117,8 +117,7 @@
                 </li>
               </ul>
             </fieldset>
-
-            <fieldset class="accommodation-group">
+            <fieldset class="accommodation-group group-fieldset">
               <legend class="accommodation-title filter-title">
                 Тип Жилья:
               </legend>
@@ -143,8 +142,8 @@
                 </li>
               </ul>
             </fieldset>
-
-            <fieldset class="filter-group price-slider">
+          </div>
+            <fieldset class="filter-group price-slider group-fieldset">
               <legend class="slider-title filter-title">
                 Стоимость, ₽:
               </legend>
@@ -175,10 +174,9 @@
         <section class="catalog" data-test="catalog">
 
             <div class="sort">
-              <h2>
+              <h2 class="hotel-counter">
                 Найдено гостиниц: 38
               </h2>
-              <div class="select-wrapper">
                 <span class="visually-hidden" >Сортировка</span>
                 <select class="select-control" >
                   <option value="popular">
@@ -191,7 +189,6 @@
                     Сначала дорогое
                   </option>
                 </select>
-              </div>
               <ul class="sort-type-list">
                 <li class="sort-type-item">
                   <a href="#" class="button-table table selected">
@@ -238,7 +235,7 @@
                   <button type="button" class="standart-button favourites">
                     В избранное
                   </button>
-                  <div class="hotel-stars" role="img" aria-label="4 звезды">
+                  <div class="hotel-stars four-stars" role="img" aria-label="4 звезды">
                     <span class="visually-hidden">
                       4 звезды
                     </span>
@@ -267,7 +264,7 @@
                   <button type="button" class="standart-button favourites selected-button">
                     В избранном
                   </button>
-                  <div class="hotel-stars" role="img">
+                  <div class="hotel-stars four-stars" role="img">
                     <span class="visually-hidden">
                       4 звезды
                     </span>
@@ -296,7 +293,7 @@
                   <button type="button" class="standart-button favourites">
                     В избранное
                   </button>
-                  <div class="hotel-stars" role="img">
+                  <div class="hotel-stars three-stars" role="img">
                     <span class="visually-hidden">
                       3 звезды
                     </span>
@@ -324,7 +321,7 @@
                   <button type="button" class="standart-button favourites">
                     В избранное
                   </button>
-                    <div class="hotel-stars"  role="img">
+                    <div class="hotel-stars two-stars"  role="img">
                       <span class="visually-hidden">
                         2 звезды
                       </span>
@@ -337,7 +334,7 @@
 
               <ul class="pagination">
                 <li class="pagination-item pagination-current">
-                  <a class="pagination-link pagination-current-link">
+                  <a class="pagination-link">
                     1
                   </a>
                 </li>
@@ -356,8 +353,9 @@
                     4
                   </a>
                 </li>
-                <li>
-                  <a class="pagination-link pagination-next" href="#">
+                <li class="pagination-item pagination-next">
+                  <a class="pagination-link" href="#">
+                    ...
                     <span class="visually-hidden">
                       Следующая страница
                     </span>
@@ -394,58 +392,53 @@
       </article>
 
       <footer class="page-footer" data-test="footer">
-        <div class="footer-content-wrapper">
-          <section class="socials">
-            <h2 class="visually-hidden">
-              Наши соцсети
-            </h2>
-            <ul class="socials-list">
-              <li class="socials-item ">
-                <a href="https://vk.com/htmlacademy" class="socials-link vk">
-                  <span class="visually-hidden">
-                    Ссылка на нас в vk
-                  </span>
-                </a>
-              </li>
-              <li class="socials-item">
-                <a href="https://t.me/htmlacademy" class="socials-link telegram">
-                  <span class="visually-hidden">
-                    Ссылка на нас в telegram
-                  </span>
-                </a>
-              </li>
-              <li class="socials-item youtube">
-                <a href="https://www.youtube.com/user/htmlacademyru" class="socials-link youtube">
-                  <span class="visually-hidden" >
-                    Ссылка на нас в youtube
-                  </span>
-                </a>
-              </li>
-            </ul>
-          </section>
-
-
-          <div class="contacts">
-            <span class="visually-hidden">
-              Наш телефон
-            </span>
-            <a href="tel:+78128121212" class="phonnumber">
-            <span>
-              +7 (812) 812-12-12
-            </span>
-          </a>
-        </div>
-
-        <div class="partnership">
-          <p class="visually-hidden">
-            Наш партнёр
-          </p>
-          <a href="https://htmlacademy.ru/">
-            <img src="pictures/svg/htmlacademylogo.svg" width="115" height="33" alt="htmlacademy логотип">
-          </a>
-        </div>
+        <section class="socials">
+          <h2 class="visually-hidden">
+            Наши соцсети
+          </h2>
+          <ul class="socials-list">
+            <li class="socials-item ">
+              <a href="https://vk.com/htmlacademy" class="socials-link vk">
+                <span class="visually-hidden">
+                  Ссылка на нас в vk
+                </span>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a href="https://t.me/htmlacademy" class="socials-link telegram">
+                <span class="visually-hidden">
+                  Ссылка на нас в telegram
+                </span>
+              </a>
+            </li>
+            <li class="socials-item youtube">
+              <a href="https://www.youtube.com/user/htmlacademyru" class="socials-link youtube">
+                <span class="visually-hidden" >
+                  Ссылка на нас в youtube
+                </span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <div class="contacts">
+          <span class="visually-hidden">
+            Наш телефон
+          </span>
+          <a href="tel:+78128121212">
+          <span class="phonnumber">
+            +7 (812) 812-12-12
+          </span>
+        </a>
       </div>
-    </footer>
+      <div class="partnership">
+        <p class="visually-hidden">
+          Наш партнёр
+        </p>
+        <a href="https://htmlacademy.ru/">
+          <img src="pictures/svg/htmlacademylogo.svg" width="115" height="33" alt="htmlacademy логотип">
+        </a>
+      </div>
+  </footer>
     </div>
   </body>
 </html>
