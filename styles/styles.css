@@ -535,15 +535,27 @@ body {
   margin: 0;
 }
 
-.checkbox-button::before{
+.radio-button{
+  position: relative;
+  display: inline-block;
+}
+
+.radio-button::before{
   content: '';
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: block;
+  background-color: #FFF;
+}
+
+.radio-button:checked::before{
+  content: '';
   width: 10px;
   height: 10px;
-  background-color: #3f5e72;
+  background-color: inherit;
   border-radius: 50%;
+  border: 5px solid #FFF;
 }
 
 .slider-labels {
@@ -552,6 +564,29 @@ body {
   text-align: right;
   font-size: 18px;
   line-height: 24px;
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+
+.position-wrapper{
+  position: relative;
+  display: inline-block;
+}
+
+.slider-input-wrapper{
+  display: flex;
+}
+
+.price-number-input::-webkit-inner-spin-button,
+.price-number-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  appearance: none;
+}
+
+.price-number-input[type=number] {
+  -moz-appearance:textfield;
 }
 
 .accept, .reset {

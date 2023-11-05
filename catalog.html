@@ -124,19 +124,19 @@
               <ul class="accommodation-list">
                 <li class="accommodation-item">
                   <label class="control">
-                    <input class="control-input radio-input" type="radio" name="type-of-housing" value="hotel" checked>
+                    <input class="control-input radio-button" type="radio" name="type-of-housing" value="hotel" checked>
                       Гостиница
                   </label>
                 </li>
                 <li class="accommodation-item">
                   <label class="control">
-                    <input class="control-input radio-input" type="radio" name="type-of-housing" value="motel">
+                    <input class="control-input radio-button" type="radio" name="type-of-housing" value="motel">
                       Мотель
                   </label>
                 </li>
                 <li class="accommodation-item">
                   <label class="control">
-                    <input class="control-input radio-input" type="radio" name="type-of-housing" value="apartments">
+                    <input class="control-input radio-button" type="radio" name="type-of-housing" value="apartments">
                       Апартаменты
                   </label>
                 </li>
@@ -147,15 +147,19 @@
               <legend class="slider-title filter-title">
                 Стоимость, ₽:
               </legend>
-              <div class="slider-input">
-                <label for="minimum-number" class="slider-labels">
-                  От:
-                </label>
-                <input type="number" placeholder="От:" value="0" name="minimum-number" class="minimum-price" id="minimum-number">
-                <label for="maximum-number" class="slider-labels">
-                  До:
-                </label>
-                <input type="number" placeholder="До:" value="9000" name="maximum-number" class="maximum-price" id="maximum-number">
+              <div class="slider-input-wrapper">
+                <div class="position-wrapper">
+                  <label for="minimum-number" class="slider-labels">
+                    От:
+                  </label>
+                  <input class="price-number-input" type="number" placeholder="От:" value="0" name="minimum-number" id="minimum-number">
+                </div>
+                <div class="position-wrapper">
+                  <label for="maximum-number" class="slider-labels">
+                    До:
+                  </label>
+                  <input class="price-number-input" type="number" placeholder="До:" value="9000" name="maximum-number" id="maximum-number">
+                </div>
               </div>
               <input type="range" min="0" max="9000" id="slider" step="1000" value="7000" name="slider" class="slider">
             </fieldset>
