@@ -150,18 +150,21 @@
               <div class="slider-input-wrapper">
                 <div class="position-wrapper">
                   <label for="minimum-number" class="slider-labels">
-                    От:
+                    От
                   </label>
-                  <input class="price-number-input" type="number" placeholder="От:" value="0" name="minimum-number" id="minimum-number">
+                  <input class="price-number-input" type="number" value="0" name="minimum-number" id="minimum-number">
                 </div>
                 <div class="position-wrapper">
                   <label for="maximum-number" class="slider-labels">
-                    До:
+                    До
                   </label>
-                  <input class="price-number-input" type="number" placeholder="До:" value="9000" name="maximum-number" id="maximum-number">
+                  <input class="price-number-input" type="number" value="9000" name="maximum-number" id="maximum-number">
                 </div>
               </div>
-              <input type="range" min="0" max="9000" id="slider" step="1000" value="7000" name="slider" class="slider">
+              <div class="slider-wrapper">
+                <input class="input-slider low-slider" type="range" min="0" max="9000" id="slider-low" step="0" value="0" name="slider-low">
+                <input class="input-slider max-slieder" type="range" min="0" max="9000" id="slider-max" step="1000" value="7000" name="slider-max">
+              </div>
             </fieldset>
 
             <div class="filter-button-wrapper">
