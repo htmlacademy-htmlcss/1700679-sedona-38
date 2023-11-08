@@ -152,18 +152,24 @@
                   <label for="minimum-number" class="slider-labels">
                     От
                   </label>
-                  <input class="price-number-input" type="number" value="0" name="minimum-number" id="minimum-number">
+                  <input class="price-number-input price-number-min" type="number" value="0" name="minimum-number" id="minimum-number">
                 </div>
                 <div class="position-wrapper">
                   <label for="maximum-number" class="slider-labels">
                     До
                   </label>
-                  <input class="price-number-input" type="number" value="9000" name="maximum-number" id="maximum-number">
+                  <input class="price-number-input price-number-max" type="number" value="9000" name="maximum-number" id="maximum-number">
                 </div>
               </div>
-              <div class="slider-wrapper">
-                <input class="input-slider low-slider" type="range" min="0" max="9000" id="slider-low" step="0" value="0" name="slider-low">
-                <input class="input-slider max-slieder" type="range" min="0" max="9000" id="slider-max" step="1000" value="7000" name="slider-max">
+              <div class="range-scale">
+                <div class="current-range-bar" style="left: 0; width: 226px">
+                  <button class="toggle toggle-min" type="button">
+                    <span class="visually-hidden">Самая низкая цена</span>
+                  </button>
+                  <button class="toggle toggle-max" type="button">
+                    <span class="visually-hidden">Самая высокая цена</span>
+                  </button>
+                </div>
               </div>
             </fieldset>
 

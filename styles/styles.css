@@ -564,13 +564,50 @@ body {
 
 .checkbox-button:checked:before{
   background-image: url(../pictures/svg/tick.svg);
+  background-position: center;
 }
 
 .radio-button:checked::before{
   background-image: url(../pictures/svg/radio-tick.svg);
+  background-position: center;
 }
 
+.range-scale {
+  align-self: start;
+  position: relative;
+  width: 100%;
+  height: 4px;
+  background-color: #FFFFFF4D;
+  cursor: pointer;
+}
 
+.current-range-bar {
+  position: absolute;
+  width: 226px;
+  height: 4px;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.toggle-min {
+  top: -8px;
+  left: 0;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -1px;
+}
 .slider-labels {
   color: #000;
   opacity: 0.3;
@@ -590,10 +627,21 @@ body {
 
 .slider-input-wrapper{
   display: flex;
+  gap:1px;
 }
 
 .price-number-input{
+  margin: 0;
+  max-width: 143px;
+  border-radius: 4px 0 0 4px;
+  border: none;
   padding: 12px 40px 12px 20px;
+  background: #f2f2f2;
+  box-sizing: border-box;
+}
+
+.price-number-max{
+  border-radius: 0 4px 4px 0;
 }
 
 .price-number-input::-webkit-inner-spin-button,
@@ -605,6 +653,7 @@ body {
 
 .price-number-input[type=number] {
   -moz-appearance:textfield;
+  appearance: textfield;
 }
 
 
@@ -857,7 +906,6 @@ body {
 
 .filter-form{
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
   align-self: stretch;
   flex-wrap: wrap;
@@ -915,20 +963,27 @@ body {
   margin-bottom: 32px;
 }
 
-.infrastructure-list, .accommodation-list{
+.infrastructure-list,
+.accommodation-list{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
 }
+
+
+
 .price-slider{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
+  margin-left: auto;
 }
+
 .filter-button-wrapper{
   display: flex;
+  margin-left: 70px;
   align-self: flex-end;
   flex-direction: column;
   align-items: center;
@@ -963,7 +1018,7 @@ body {
   padding: 0;
   margin: 0;
   list-style-type: none;
-  max-width: 117px;
+  max-width: 120px;
   justify-content: flex-end;
   margin-left: 70px;
   flex-wrap: wrap;
