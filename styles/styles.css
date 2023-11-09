@@ -172,7 +172,7 @@ body {
 }
 
 .navigation-link{
-  font-family: Pt sans;
+  font-family: Pt sans, sans-serif;
   font-size: 20px;
   line-height: 24px;
   padding: 20px 16px;
@@ -196,7 +196,7 @@ body {
 }
 
 .navigation-link:active,
-.navigation-link:active svg path {
+.navigation-link:active svg {
   opacity: 0.3;
 }
 
@@ -597,13 +597,14 @@ body {
   position: relative;
 }
 
-.htmlacademy-logo-link svg param{
+
+.htmlacademy-logo-link svg{
   fill: #000000;
 }
 
-.htmlacademy-logo-link svg path:hover,
-.htmlacademy-logo-link svg path:active,
-.htmlacademy-logo-link svg path:focus-visible{
+.htmlacademy-logo-link:hover svg,
+.htmlacademy-logo-link:active svg,
+.htmlacademy-logo-link:focus-visible svg {
   fill: #756157;
 }
 
@@ -669,17 +670,11 @@ body {
 
 
 .control-input:focus-visible{
-  border-radius: 6px;
-  border: 3px solid #83B3D3;
-  outline: none;
-  margin-right: 11px;
+  outline: 3px solid #83B3D3;
 }
 
 .radio-button:focus-visible{
-  border-radius: 50%;
-  border: 3px solid #83B3D3;
-  outline: none;
-  margin-right: 11px;
+  outline: 3px solid #83B3D3;
 }
 
 .radio-button,
@@ -688,7 +683,7 @@ body {
   position: relative;
 }
 
-.checkbox-button::before{
+.checkbox-button{
   content: '';
   display: block;
   width: 20px;
@@ -697,8 +692,7 @@ body {
   background-color: #FFF;
 }
 
-.radio-button::before{
-  content: '';
+.radio-button{
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -706,12 +700,12 @@ body {
   background-color: #FFF;
 }
 
-.checkbox-button:checked:before{
+.checkbox-button:checked{
   background-image: url(../pictures/svg/tick.svg);
   background-position: center;
 }
 
-.radio-button:checked::before{
+.radio-button:checked{
   background-image: url(../pictures/svg/radio-tick.svg);
   background-size: cover;
   background-position: center;
@@ -1059,16 +1053,18 @@ body {
   min-height: 40px;
   padding: 0 10px;
 }
+.socials-link svg{
+  fill: #83B3D3;
+}
 
 
-
-.socials-link svg path:hover,
-.socials-link svg path:active  {
+.socials-link:hover svg,
+.socials-link:active svg {
   fill: #68a2ca;
   outline: none;
 }
 
-.socials-link svg path:active {
+.socials-link:active svg {
   fill: rgba(104, 162, 202, 0.3);
 }
 
@@ -1329,6 +1325,20 @@ body {
   text-align: center;
   min-height: 100% ;
   text-decoration: none;
+}
+
+
+.pagination-item:hover,
+.pagination-next:focus-visible{
+  background-color: #68a2ca;
+}
+
+.pagination-item:active{
+  background-color: #82b3d3;
+}
+
+.pagination-link:active{
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination-current:hover,
