@@ -96,23 +96,31 @@
             <div class="settings-overflow-wrapper">
             <fieldset class="infrastructure-group group-fieldset">
               <legend class="infrastructure-title filter-title">
-                Инфаструктура:
+                Инфраструктура:
               </legend>
               <ul class="infrastructure-list">
                 <li class="infrastructure-item">
                   <label class="control">
-                    <input class="control-input checkbox-button" type="checkbox" name="facilities" value="pool" checked>Бассейн
+                    <input class="control-input checkbox-button" type="checkbox" name="facilities" value="pool" checked>
+                    <span class="label-text">
+                      Бассейн
+                    </span>
                   </label>
                 </li>
                 <li class="infrastructure-item">
                   <label class="control">
-                    <input class="control-input checkbox-button" type="checkbox" name="facilities" value="parking" checked>Парковка
+                    <input class="control-input checkbox-button" type="checkbox" name="facilities" value="parking" checked>
+                    <span class="label-text">
+                      Парковка
+                    </span>
                   </label>
                 </li>
                 <li class="infrastructure-item">
                   <label class="control">
                   <input class="control-input checkbox-button" type="checkbox" name="facilities" value="wi-fi">
-                    Wi-Fi
+                    <span class="label-text">
+                      Wi-Fi
+                    </span>
                   </label>
                 </li>
               </ul>
@@ -125,19 +133,25 @@
                 <li class="accommodation-item">
                   <label class="control">
                     <input class="control-input radio-button" type="radio" name="type-of-housing" value="hotel" checked>
+                    <span class="label-text">
                       Гостиница
+                    </span>
                   </label>
                 </li>
                 <li class="accommodation-item">
                   <label class="control">
                     <input class="control-input radio-button" type="radio" name="type-of-housing" value="motel">
+                    <span class="label-text">
                       Мотель
+                    </span>
                   </label>
                 </li>
                 <li class="accommodation-item">
                   <label class="control">
                     <input class="control-input radio-button" type="radio" name="type-of-housing" value="apartments">
+                    <span class="label-text">
                       Апартаменты
+                    </span>
                   </label>
                 </li>
               </ul>
@@ -177,7 +191,7 @@
               <button class="standart-button accept" type="submit">
                 Применить
               </button>
-              <button class="standart-button small reset" type="reset">
+              <button class="standart-button reset" type="reset">
                 Сбросить
               </button>
             </div>
@@ -191,12 +205,12 @@
                 Найдено гостиниц: 38
               </h2>
                 <span class="visually-hidden" >Сортировка</span>
-                <select class="select-control" >
+                <select class="select-control" title="Сортировка">
                   <option value="popular">
                     Сначала популярное
                   </option>
                   <option value="cheap" selected>
-                    Сначала дешёвое
+                    Сначала дешевые
                   </option>
                   <option value="expensive">
                     Сначала дорогое
@@ -204,7 +218,7 @@
                 </select>
               <ul class="sort-type-list">
                 <li class="sort-type-item">
-                  <a href="#" class="button-table table selected">
+                  <a href="#" class="button-table table button-table-selected">
                     <span class="visually-hidden">
                       Переключить элементы таблицей
                     </span>
@@ -347,7 +361,7 @@
 
               <ul class="pagination">
                 <li class="pagination-item pagination-current">
-                  <a class="pagination-link">
+                  <a class="pagination-link" href="#">
                     1
                   </a>
                 </li>
