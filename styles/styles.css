@@ -576,14 +576,39 @@ body {
   text-transform: uppercase;
 }
 
+.phone-link:hover,
+.phone-link:active,
+.phone-link:focus-visible{
+  color:#756157;
+}
+
+.phone-link:active{
+  opacity: 0.3;
+}
+
 .partnership{
   display: flex;
   flex-wrap: wrap;
   max-width: 120px;
 }
 
-.htmlacademylogo {
+.htmlacademy-logo-link {
   display: block;
+  position: relative;
+}
+
+.htmlacademy-logo-link svg param{
+  fill: #000000;
+}
+
+.htmlacademy-logo-link svg path:hover,
+.htmlacademy-logo-link svg path:active,
+.htmlacademy-logo-link svg path:focus-visible{
+  fill: #756157;
+}
+
+.htmlacademy-logo-link{
+  opacity: 0.3;
 }
 
 .filter {
@@ -964,14 +989,14 @@ body {
 
 
 
-.socials-link:hover,
-.socials-link:active  {
-  color: #68a2ca;
+.socials-link svg path:hover,
+.socials-link svg path:active  {
+  fill: #68a2ca;
   outline: none;
 }
 
-.socials-link:active {
-  color: rgba(104, 162, 202, 0.3);
+.socials-link svg path:active {
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 
