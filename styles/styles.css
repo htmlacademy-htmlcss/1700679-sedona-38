@@ -1026,6 +1026,11 @@ body {
   background-position: center;
 }
 
+.button-table:hover,
+.button-table:active{
+  border: 2px solid #000000;
+}
+
 .button-table-selected{
   border-color: #000;
 }
