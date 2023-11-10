@@ -185,18 +185,20 @@ body {
 }
 
 
-.navigation-link:focus-visible{
+.navigation-link:focus-visible
+.nav-logo:focus-visible{
   opacity: 0.6;
   outline: 2px solid #000000;
   outline-offset: -2px;
 }
 
-.navigation-link:hover{
+.navigation-link:hover,
+.nav-logo:hover{
   opacity: 0.8;
 }
 
 .navigation-link:active,
-.navigation-link:active svg {
+.nav-logo:active {
   opacity: 0.3;
 }
 
@@ -837,6 +839,11 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.accept:disabled{
+  background: #e5e5e5;
+  pointer-events: none;
+}
+
 .reset:hover,
 .reset:focus-visible{
   outline: none;
@@ -844,6 +851,10 @@ body {
 
 .reset:hover{
   opacity: 0.6;
+}
+
+.reset:disabled{
+  pointer-events: none;
 }
 
 .products{
@@ -996,6 +1007,12 @@ body {
 
 .select-control:active{
   border: 2px solid #3f5e72;
+}
+
+.select-control:disabled{
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
 }
 
 .button-table{
@@ -1241,10 +1258,19 @@ body {
   margin-bottom: 80px;
 }
 
-.hotel-card-img,
-.product-card-title{
+.hotel-card-link{
   display: block;
   grid-column: span 2;
+  text-decoration: none;
+  color: #000;
+}
+
+.hotel-card-link:hover{
+  opacity: 0.8;
+}
+
+.hotel-card-link:active{
+  opacity: 0.3;
 }
 
 .hotel-stars::before{
@@ -1269,7 +1295,7 @@ body {
   width: 42px;
 }
 
-.favourites{
+.product-button{
   width: 140px;
   height: 36px;
   display: flex;
@@ -1278,12 +1304,40 @@ body {
   align-items: center;
 }
 
+
 .more-info {
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
   background-color: #756157;
+}
+
+.product-button:hover{
+  background-color: #68a2ca;
+}
+
+.product-button:active{
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82b3d3;
+}
+
+.more-info:hover{
+  background-color: #615048;
+}
+
+.more-info:active{
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #756157;
+}
+
+.selected-button:hover{
+  background-color: #6c9e42;
+}
+
+.selected-button:active{
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #7db54f;
 }
 
 .product-list::after{
