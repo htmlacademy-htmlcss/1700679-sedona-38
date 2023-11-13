@@ -532,7 +532,7 @@ input.calendar-field::placeholder {
   left: 20px;
   width: 20px;
   height: 20px;
-  background: #7db54f;
+  background-color: #7db54f;
   color: #ffffff;
   border-radius: 10px;
   font-size: 10px;
