@@ -1629,12 +1629,13 @@ input.calendar-field::placeholder {
 .breadcrumbs-item::after{
   content: '';
   display: block;
-  height: 22px;
+  height: 11px;
   width: 8px;
   margin: 0 10px;
   background-image: url(../pictures/svg/breadcrumbs.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .breadcrumbs-item:last-child:after{
