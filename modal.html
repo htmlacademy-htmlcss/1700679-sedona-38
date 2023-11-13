@@ -14,42 +14,139 @@
 
   <body>
     <div class="content">
-        <header class="page-header" data-test="header">
-          <nav class="navigation pads">
-              <a href="index.html" aria-current="page" class="nav-logo">
-                <img src="pictures/svg/logo.svg" alt="логотип" width="140" height="70">
-              </a>
-              <ul class="navigation-list navigation-page">
-                <li class="navigation-item ">
-                  <a href="index.html" aria-current="page" class="navigation-link current-page">Главная</a>
-                </li>
-                <li class="navigation-item">
-                  <a class="navigation-link" href="#" >О Седоне</a>
-                </li>
-                <li class="navigation-item">
-                  <a class="navigation-link" href="catalog.html">Гостиницы</a>
-                </li>
-              </ul>
-              <ul class="navigation-list  right-part">
-                <li class="navigation-item ">
-                  <a class="navigation-link" href="#">
-                    <svg class="navigation-icon" aria-hidden="true" focusable="false" width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path fill="#000" d="m19.5 18-3.7-3.67c1-1.3 1.7-2.98 1.7-4.87a8 8 0 0 0-8-7.96c-4.4 0-8 3.68-8 8.06a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z"></path></svg>
-                    <span class="visually-hidden">Выбрать гостиницу</span>
-                  </a>
-                </li>
-                <li class="navigation-item">
-                  <a class="navigation-link navigation-favorites" href="#">
-                    <svg class="navigation-icon" aria-hidden="true" focusable="false" width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path fill="#000" d="M9.9 19a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"></path></svg>
-                    <span class="visually-hidden">В избранном 12 гостиниц</span>
-                    <span class="liked-hotels-counter">12</span>
-                  </a>
-                </li>
-              </ul>
+      <header class="page-header" data-test="header">
+        <nav class="navigation pads">
+            <a href="index.html" aria-current="page" class="nav-logo">
+              <img src="pictures/svg/logo.svg" alt="логотип" width="140" height="70">
+            </a>
+            <ul class="navigation-list navigation-page">
+              <li class="navigation-item ">
+                <a href="index.html" aria-current="page" class="navigation-link current-page">Главная</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#" >О Седоне</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="catalog.html">Гостиницы</a>
+              </li>
+            </ul>
+            <ul class="navigation-list  right-part">
+              <li class="navigation-item ">
+                <a class="navigation-link" href="#">
+                  <svg class="navigation-icon" aria-hidden="true" focusable="false" width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path fill="#000" d="m19.5 18-3.7-3.67c1-1.3 1.7-2.98 1.7-4.87a8 8 0 0 0-8-7.96c-4.4 0-8 3.68-8 8.06a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z"></path></svg>
+                  <span class="visually-hidden">Выбрать гостиницу</span>
+                </a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link navigation-favorites" href="#">
+                  <svg class="navigation-icon" aria-hidden="true" focusable="false" width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path fill="#000" d="M9.9 19a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"></path></svg>
+                  <span class="visually-hidden">В избранном 12 гостиниц</span>
+                  <span class="liked-hotels-counter">12</span>
+                </a>
+              </li>
+            </ul>
+              <div class=" popaver-show" >
+                <div class="popaver" data-test="modal">
+                  <div class="popaver-content">
+                    <button type="button" class="popaver-close-button">
+                      <span class="visually-hidden">
+                        Кнопка чтобы закрыть попавер
+                      </span>
+                    </button>
+                        <h2 class="popaver-title">
+                          Поиск гостиницы в Седоне
+                        </h2>
+                        <form class="popaver-form" action="https://echo.htmlacademy.ru/" method="post">
+                          <ul class="popaver-settings-list">
+                            <li class="popaver-settings-item">
+                              <label class="settings-label" for="check-in-date">
+                                Дата заезда:
+                              </label>
+                              <input class="calendar-field" type="text"  id="check-in-date" name="check-in-date" value="27 апреля 2020" placeholder="Укажите дату заезда" required="">
+                              <span class="calendar-result error">
+                                Мы не можем отправить вас в прошлое.
+                              </span>
+                            </li>
+                            <li class="popaver-settings-item">
+                              <label class="settings-label" for="check-out">
+                                Дата выезда:
+                              </label>
+                              <input class="calendar-field" type="text" id="check-out-date" name="check-out-date" value="1 сентября 2023" placeholder="Укажите дату выезда" required="">
+                              <span class="calendar-result">
+                                На эти даты есть свободные номера. Пока есть.
+                              </span>
+                            </li>
+                            <li class="popaver-settings-item popaver-settings-low">
+                              <label class="settings-label" for="adults">
+                                Взрослые:
+                              </label>
+                              <span class="popaver-number-buttons">
+                                <button class="number-button" type="button">
+                                  <span class="visually-hidden">
+                                    Уменьшить.
+                                  </span>
+                                  <svg width="20" height="20" aria-hidden="true" focusable="false">
+                                    <path d="M3 9v2h14V9H3Z"></path>
+                                  </svg>
+                                </button>
+                                <input class="number-field" type="number" id="adults" name="adults" value="2"  min="1" max="99" required="">
+                                <button class="number-button" type="button">
+                                  <span class="visually-hidden">
+                                    Увеличить.
+                                  </span>
+                                  <svg width="20" height="20" aria-hidden="true" focusable="false">
+                                    <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"></path>
+                                  </svg>
+                                </button>
+                              </span>
+                            </li>
+                            <li class="popaver-settings-item popaver-settings-low">
+                              <span class="tooltip-wrapper">
+                                <label class="settings-label" for="children">
+                                  Дети:
+                                </label>
+                                <span class="tooltip">
+                                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+
+                                  </button>
+                                  <span class="tooltip-text" role="tooltip" id="tooltip-label">
+                                    Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                                  </span>
+                                </span>
+                              </span>
+                              <span class="popaver-number-buttons">
+                                <button class="number-button" type="button">
+                                  <span class="visually-hidden">
+                                    Уменьшить.
+                                  </span>
+                                  <svg width="20" height="20" aria-hidden="true" focusable="false">
+                                    <path d="M3 9v2h14V9H3Z"></path>
+                                  </svg>
+                                </button>
+                                <input class="number-field" type="number" id="children" name="children" value="2" min="0" max="99" required="">
+                                <button class="number-button" type="button">
+                                  <span class="visually-hidden">
+                                    Увеличить.
+                                  </span>
+                                  <svg  width="20" height="20" aria-hidden="true" focusable="false">
+                                    <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"></path>
+                                  </svg>
+                                </button>
+                              </span>
+                            </li>
+                          </ul>
+                          <button class="standart-button popaver-find" type="submit">Найти</button>
+                        </form>
+                    </div>
+                </div>
+              </div>
+
               <div class="button-overflow-wrapper">
                 <button type="button" class="standart-button gray-button navigation-here-button">Хочу сюда!</button>
               </div>
           </nav>
         </header>
+
 
         <main data-test="main" class="main-page">
           <div class="welcome-hero-wrapper" data-test="hero">
@@ -82,11 +179,11 @@
                   </ul>
                 </li>
                 <li class="advanteges-item devil-bridge">
+                  <img class="advantages-picture" src="pictures/jpeg/devil_bridge.jpg" width="800" alt="Большой каньон">
                   <div class="advantages-text-wrapper blue-card">
                     <h3 class="advanteges-title">Там есть <br>мост дьявола</h3>
                     <p class="advantages-description">Да, по нему можно пройти! <br> Если вы осмелитесь, <br> разумеется</p>
                   </div>
-                  <img class="advantages-picture" src="pictures/jpeg/devil_bridge.jpg" width="800" alt="Большой каньон">
                 </li>
               </ul>
           </section>

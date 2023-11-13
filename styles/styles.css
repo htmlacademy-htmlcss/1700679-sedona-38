@@ -31,6 +31,7 @@ body {
   margin: 0;
   font-family: Pt Sans, sans-serif;
   background: #f2f2f2;
+  padding: 0 40px;
 }
 
 .content {
@@ -39,7 +40,7 @@ body {
   min-height: 100%;
   margin: 0 auto;
   background: #fff;
-  max-width: 1200px;
+  width: 1200px;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
 }
 
@@ -54,7 +55,7 @@ body {
   display: flex;
   padding: 40px 70px 30px 70px;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   min-width: 1060px;
 }
 
@@ -83,6 +84,8 @@ body {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .gray-button {
@@ -118,9 +121,13 @@ body {
   z-index: 2;
   display: block;
   position: relative;
+  margin-bottom: -6px;
+}
+
+.nav-logo img{
+  display: block;
   width: 140px;
   height: 70px;
-  margin-bottom: -6px;
 }
 
 .navigation-list {
@@ -219,7 +226,6 @@ body {
 
 .popaver-close-button:focus-visible {
   background-color: #e6e6e6;
-  outline: 3px solid #83b3d3;
 }
 
 .popaver-close-button:active::before {
@@ -314,7 +320,6 @@ input.calendar-field::placeholder {
 .calendar-field:focus-visible {
   background-color: #e6e6e6;
   border-color: #e6e6e6;
-  outline: 3px solid #83b3d3;
 }
 
 .popaver-number-buttons{
@@ -349,13 +354,6 @@ input.calendar-field::placeholder {
   opacity: 0.3;
 }
 
-.number-button:focus-visible,
-.number-field:focus-visible,
-.calendar-field:focus-visible,
-.popaver-find:focus-visible,
-.tooltip-toggle:focus-visible{
-  outline: 3px solid #82B3D3;
-}
 
 .number-field{
   padding: 14px 10px 14px 10px;
@@ -525,8 +523,7 @@ input.calendar-field::placeholder {
   display: none;
 }
 
-.navigation-favorites::before{
-  content: '12';
+.liked-hotels-counter{
   position: absolute;
   display: flex;
   align-items: center;
@@ -559,8 +556,6 @@ input.calendar-field::placeholder {
 .navigation-link:focus-visible
 .nav-logo:focus-visible{
   opacity: 0.6;
-  outline: 2px solid #000000;
-  outline-offset: -2px;
 }
 
 .navigation-link:hover,
@@ -608,8 +603,7 @@ input.calendar-field::placeholder {
 
 .navigation-here-button:hover,
 .find-button:focus-visible{
-  background: #615048;
-  outline: none;
+  background-color: #615048;
 }
 
 .navigation-here-button:disabled,
@@ -621,27 +615,29 @@ input.calendar-field::placeholder {
 .navigation-here-button:active,
 .find-button:active
 {
-  background: #756157;
   color: rgba(255, 255, 255, 0.3);
 }
 
 
 /* hero */
 .welcome-hero-wrapper {
-  display: block;
+  padding-bottom: 81px;
   min-height: 485px;
   padding-top: 51px;
   margin: 0 auto;
-  background-color: #24d18f;
+  background-color: #8daab8;
   background-image: url(../pictures/svg/whiteline.svg), url(../pictures/jpeg/sedona_background.jpg);
   background-position: bottom, bottom;
   background-repeat: no-repeat, no-repeat;
   background-size: auto auto ,100% 100%;
   box-sizing: border-box;
 }
-.welcome-hero-wrapper img{
+
+.welcome-hero-picture{
   display: block;
   margin: 0 auto;
+  height: 352px;
+  width: 458px;
 }
 
 .advanteges{
@@ -650,13 +646,14 @@ input.calendar-field::placeholder {
 
 .description {
   margin: 0;
-  padding: 0;
   font-size: 30px;
   text-transform: uppercase;
   line-height: 36px;
   font-weight: 700;
-  margin-top: 69px;
   margin-bottom: 25px;
+  padding: 70px 278px 0 278px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .reasons-title {
@@ -666,9 +663,11 @@ input.calendar-field::placeholder {
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
-.advanteges-item p {
+.advantages-description {
   margin: 0;
   padding: 0;
   color: #fff;
@@ -685,12 +684,20 @@ input.calendar-field::placeholder {
   grid-template-columns: 400px auto;
 }
 
+.advanteges-item:nth-child(even) .advantages-text-wrapper{
+  order: 2;
+}
+
+.advanteges-item:nth-child(even) .advantages-picture{
+  order: 1;
+}
+
 .blue-card .advanteges-title::after{
   background-color: #FFF;
 }
 
 .advantages-text-wrapper {
-  padding: 103px 83px;
+  padding: 102px 83px;
   background-color: #82b3d3;
 }
 
@@ -724,21 +731,30 @@ input.calendar-field::placeholder {
 }
 
 .advanteges-title {
+  margin: 0;
   text-align: center;
-  margin: 0 auto;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .advantages-picture{
   display: block;
+  width: 800px;
+  height: 385px;
+  background-color: #68a2ca;
+
 }
 
 .nested-advanteges-items {
   text-align: center;
   background-color: #83b3d31f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .nested-advanteges-items .advanteges-title {
@@ -751,9 +767,13 @@ input.calendar-field::placeholder {
 
 .nested-advanteges-items .advantages-description {
   color: #333;
+  margin: 0  auto;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  max-width: 240px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .nested-advanteges-items:nth-child(even) {
@@ -762,7 +782,7 @@ input.calendar-field::placeholder {
 
 .devil-bridge {
   display: grid;
-  align-items: center;
+
   grid-template-columns: auto 400px;
   color: #fff;
   background-color: #82b3d3;
@@ -793,6 +813,8 @@ input.calendar-field::placeholder {
   padding: 64px 340px;
   flex-direction: column;
   gap: 20px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .adition-advanteges-list {
@@ -802,25 +824,40 @@ input.calendar-field::placeholder {
   display: grid;
   grid-template-columns: 400px 400px 400px;
   align-items: center;
+
 }
 
 
 .adition-advateges-item {
   display: flex;
   flex-direction: column;
-  padding: 79.5px 85px;
+  padding: 181px 85px 81px;
+  background-repeat: no-repeat;
+  background-position: top 80px center;
 }
 
-.adition-advateges-item h3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.home{
+  background-image: url(../pictures/svg/home.svg);
+}
+
+.food{
+  background-image: url(../pictures/svg/food.svg);
+}
+
+.souvenirs{
+  background-image: url(../pictures/svg/souvenirs.svg);
+}
+
+.adition-advanteges-title {
+  max-width: 230px;
   margin: 0 0 30px 0;
   font-weight: 700;
   font-size: 24px;
   text-transform: uppercase;
   line-height: 28px;
   text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .adition-advateges-item:nth-child(odd) {
@@ -828,10 +865,13 @@ input.calendar-field::placeholder {
 }
 
 .adition-advanteges-description{
+  color: #333333;
   margin: 0;
   text-align: center;
   font-size: 18px;
   line-height: 21px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .find-accommodation {
@@ -859,22 +899,26 @@ input.calendar-field::placeholder {
 
 .find-button:hover{
   background-color: #615048;
-  outline: none;
 }
 
 .find-accommodation .big-text{
   margin-bottom: 20px;
+  max-width: 500px;
 }
 
-.find-accommodation p {
+.find-accommodation .text-bottom {
   font-size: 22px;
   line-height: 26px;
   margin: 0;
   margin-bottom: 54px;
+  max-width: 592px;
+  color: #333333;
 }
 
 .newsletter-subscribe {
-  background: #24d18f url(../pictures/jpeg/subscribe_background.jpg) no-repeat;
+  background-color: #8daab8;
+  background-image: url(../pictures/jpeg/subscribe_background.jpg);
+  background-repeat: no-repeat;
   color: #fff;
   display: flex;
   padding: 96px 258px 104px 258px;
@@ -887,6 +931,11 @@ input.calendar-field::placeholder {
 .newsletter-subscribe .newsletter-title{
   margin: 0;
   margin-bottom: 20px;
+}
+
+.text-bottom{
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .newsletter-subscribe .text-bottom {
@@ -903,14 +952,13 @@ input.calendar-field::placeholder {
 
 .email-submit{
   font-family: inherit;
-  padding: 12px 20px;
+  padding: 14px 20px;
   font-size: 18px;
   line-height: 25px;
   border: #f2f2f2;
   border-radius: 4px 0 0 4px;
   flex: 1 0 0;
   background: #f2f2f2;
-  outline: 0;
 }
 
 .email-submit:hover{
@@ -919,13 +967,11 @@ input.calendar-field::placeholder {
 
 .email-submit:focus-visible {
   background-color: #f2f2f2;
-  outline: 3px solid #83b3d3;
 }
 
 .subscribe-button:hover,
 .subscribe-button:focus-visible{
   background: #68a2ca;
-  outline: none;
 }
 
 .subscribe-button:active {
@@ -950,14 +996,21 @@ input.calendar-field::placeholder {
   display: flex;
   flex-wrap: wrap;
   max-width: 340px;
+  min-height: 50px;
+  align-items: center;
 }
 
 .phone-link{
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: #000;
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
+  min-height: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .phone-link:hover,
@@ -974,11 +1027,14 @@ input.calendar-field::placeholder {
   display: flex;
   flex-wrap: wrap;
   max-width: 120px;
+  min-height: 50px;
+  align-items: center;
 }
 
 .htmlacademy-logo-link {
   display: block;
   position: relative;
+  margin: 8.5px 0;
 }
 
 
@@ -992,11 +1048,14 @@ input.calendar-field::placeholder {
   fill: #756157;
 }
 
-.htmlacademy-logo-link:active{
+.htmlacademy-logo-link:active,
+.htmlacademy-logo-link:disabled{
   opacity: 0.3;
 }
 
-
+.htmlacademy-logo-link:disabled{
+  pointer-events: none;
+}
 
 .settings-overflow-wrapper{
   display: flex;
@@ -1017,7 +1076,7 @@ input.calendar-field::placeholder {
 }
 
 .infrastructure-group{
-  margin-right: 70px;
+  margin-right: 71px;
 }
 
 
@@ -1025,6 +1084,9 @@ input.calendar-field::placeholder {
 .filter-main-title {
   font-size: 60px;
   line-height: 78px;
+  max-width: 1060px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .filter-form,
@@ -1040,7 +1102,13 @@ input.calendar-field::placeholder {
   appearance: none;
   display: flex;
   align-items: center;
-  max-height: 23px;
+}
+
+.filter-form .label-text{
+  display: block;
+  max-width: 150px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .filter-form .control-input{
@@ -1060,12 +1128,9 @@ input.calendar-field::placeholder {
 
 
 
-.control-input:focus-visible{
-  outline: 3px solid #83B3D3;
-}
-
-.radio-button:focus-visible{
-  outline: 3px solid #83B3D3;
+.filter-form  .control-input:disabled{
+  pointer-events: none;
+  opacity: 0.3;
 }
 
 .radio-button,
@@ -1133,9 +1198,6 @@ input.calendar-field::placeholder {
   background-color: #68a2ca;
 }
 
-.toggle:focus-visible{
-  outline: 3px solid #82b3d3;
-}
 
 .toggle-min {
   top: -8px;
@@ -1174,7 +1236,7 @@ input.calendar-field::placeholder {
   max-width: 143px;
   border-radius: 4px 0 0 4px;
   border: none;
-  padding: 14px 20px 10px;
+  padding: 14px 50px 10px 20px;
   background: #f2f2f2;
   box-sizing: border-box;
   font-family: inherit;
@@ -1187,9 +1249,6 @@ input.calendar-field::placeholder {
   background-color: #E6E6E6 ;
 }
 
-.price-number-input:focus-within{
-  outline: 3px solid #83B3D3;
-}
 
 .price-number-max{
   border-radius: 0 4px 4px 0;
@@ -1214,15 +1273,11 @@ input.calendar-field::placeholder {
 
 .reset {
   background: transparent;
-  outline: none;
 }
-.reset:focus-visible{
-  outline: 3px solid #82b3d3;
-}
+
 .accept:hover,
 .accept:focus-visible{
   background-color: #68a2ca;
-  outline: none;
 }
 
 .accept:active{
@@ -1280,6 +1335,8 @@ input.calendar-field::placeholder {
 
 .product-card-image{
   display: block;
+  width: 300px;
+  height: 212px;
 }
 
 .product-card-title {
@@ -1287,6 +1344,8 @@ input.calendar-field::placeholder {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .price-hotel {
@@ -1294,19 +1353,25 @@ input.calendar-field::placeholder {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  color: #333333;
 }
 
 .rate {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 37px;
+  min-height: 37px;
   border-radius: 4px;
   background-color: #f2f2f2;
   text-align: center;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  color: #333333;
 }
 
 .subscribe-button {
@@ -1314,6 +1379,7 @@ input.calendar-field::placeholder {
   padding: 8px 50px;
   border-radius: 0 4px 4px 0;
   line-height: 36px;
+  max-width: 232px;
 }
 .newsletter-subscribe-form .email-submit,
 .newsletter-subscribe-form .subscribe-button {
@@ -1326,33 +1392,14 @@ input.calendar-field::placeholder {
   font-weight: 400;
 }
 
-.adition-advanteges-title::before{
-  content: '';
-  display: block;
-  width: 75px;
-  height: 75px;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 30px;
-}
-
-.home::before{
-  background-image: url(../pictures/svg/home.svg);
-}
-
-.food::before{
-  background-image: url(../pictures/svg/food.svg);
-}
-
-.souvenirs::before{
-  background-image: url(../pictures/svg/souvenirs.svg);
-}
 
 .big-text{
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .filter-form .filter-title,
@@ -1363,12 +1410,17 @@ input.calendar-field::placeholder {
   text-transform: capitalize;
   display: block;
   padding: 0;
+  max-width: 152px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 
 .accommodation-type {
   font-size: 18px;
   line-height: 21px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .select-control option{
@@ -1391,6 +1443,7 @@ input.calendar-field::placeholder {
   background-repeat: no-repeat;;
   margin-left: auto;
   font-family: inherit;
+  color: #333333;
 }
 
 
@@ -1410,6 +1463,7 @@ input.calendar-field::placeholder {
 
 .button-table{
   display: inline-block;
+  background-color: #fff;
   border: 2px solid #E6E6E6;
   border-radius: 4px;
   box-sizing: border-box;
@@ -1443,6 +1497,7 @@ input.calendar-field::placeholder {
 .socials-list{
   list-style-type: none;
   display: flex;
+  min-width: 145px;
   max-width: 150px;
   margin: 0;
   padding: 0;
@@ -1451,9 +1506,6 @@ input.calendar-field::placeholder {
   min-height: 50px;
 }
 
-.selected-button{
-  background-color: #7DB54F;
-}
 
 .socials-item{
   position: relative;
@@ -1467,30 +1519,22 @@ input.calendar-field::placeholder {
   align-items: center;
   justify-content: center;
   min-height: 40px;
-  padding: 0 10px;
+  min-width: 47px;
 }
+
 .socials-link svg{
   fill: #83B3D3;
 }
 
-
 .socials-link:hover svg,
 .socials-link:active svg {
   fill: #68a2ca;
-  outline: none;
 }
 
 .socials-link:active svg {
   fill: rgba(104, 162, 202, 0.3);
 }
 
-.socials-link:focus-visible,
-.phone-link:focus-visible,
-.htmlacademy-logo-link:focus-visible{
-  outline: none;
-}
-
-/* catalog */
 .header-filter h1{
   margin: 0;
   font-size: 60px;
@@ -1505,7 +1549,9 @@ input.calendar-field::placeholder {
   flex-direction: column;
   align-items: flex-start;
   gap: 40px;
-  background: #26f578 url(../pictures/jpeg/filter_background.jpg) no-repeat;
+  background-color: #8daab8;
+  background-image: url(../pictures/jpeg/filter_background.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
 }
@@ -1535,6 +1581,7 @@ input.calendar-field::placeholder {
   background-repeat: no-repeat;
   background-position: center;
   background-image: url(../pictures/svg/home_page.svg);
+  background-size: cover;
 }
 
 .breadcrumbs-item{
@@ -1560,19 +1607,15 @@ input.calendar-field::placeholder {
   opacity: 0.3;
 }
 
-
-.breadcrumbs-link:focus-visible{
-  outline: none;
-  border: none;
-}
-
 .breadcrumbs-item::after{
   content: '';
   display: block;
-  height: 11px;
+  height: 22px;
   width: 8px;
   margin: 0 10px;
-  background: url(../pictures/svg/breadcrumbs.svg) no-repeat center;
+  background-image: url(../pictures/svg/breadcrumbs.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .breadcrumbs-item:last-child:after{
@@ -1589,9 +1632,13 @@ input.calendar-field::placeholder {
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
+  margin-bottom: 16px;
 }
 
-
+.infrastructure-list:last-of-type,
+.accommodation-list:last-of-type{
+  margin-bottom: 0;
+}
 
 .price-slider{
   display: flex;
@@ -1599,13 +1646,13 @@ input.calendar-field::placeholder {
   align-items: flex-start;
   gap: 43px;
   margin-left: auto;
+  margin-right: 70px;
 }
 
 .filter-button-wrapper{
   display: flex;
-  margin-left: 70px;
   padding-top: 56px;
-  align-self: flex-end;
+  align-self: flex-start;
   flex-direction: column;
   align-items: center;
   gap: 32px;
@@ -1631,6 +1678,7 @@ input.calendar-field::placeholder {
 .hotel-counter{
   margin: 0;
   padding: 0;
+  max-width: 500px;
 }
 
 .sort-type-list{
@@ -1699,17 +1747,11 @@ input.calendar-field::placeholder {
 }
 
 .product-button{
-  width: 140px;
-  height: 36px;
-  display: flex;
-  padding: 8px 8px;
-  justify-content: center;
-  align-items: center;
+  min-width: 140px;
+  min-height: 36px;
+  padding: 8px 20px;
 }
 
-.product-button:focus-visible{
-  outline: none;
-}
 
 .more-info {
   font-size: 16px;
@@ -1738,6 +1780,12 @@ input.calendar-field::placeholder {
   color: rgba(255, 255, 255, 0.3);
   background-color: #756157;
 }
+
+.selected-button{
+  background-color: #7DB54F;
+  padding: 8px 16px;
+}
+
 
 .selected-button:hover,
 .selected-button:focus-visible{
@@ -1778,10 +1826,11 @@ input.calendar-field::placeholder {
   border-radius: 4px;
   background-color: #82B3D3;
   align-items: center;
+  line-height: 36px;
 }
 
 .pagination-link{
-  padding: 19.5px 11px;
+  padding: 0 11px;
   color: #FFF;
   flex-grow: 1;
   display: block;
@@ -1789,6 +1838,9 @@ input.calendar-field::placeholder {
   min-height: 100% ;
   text-decoration: none;
   border-radius: 4px;
+  font-weight: 700;
+  font-size: 20px;
+  height: 100%;
 }
 
 
@@ -1798,7 +1850,6 @@ input.calendar-field::placeholder {
 
 .pagination-item:focus-visible,
 .pagination-link:focus-visible{
-  outline: none;
   background-color: #68a2ca;
 }
 
@@ -1818,8 +1869,6 @@ input.calendar-field::placeholder {
 .pagination-next:active {
   background: #f2f2f2;
   color: #000000;
-  border: none;
-  outline: none;
 }
 
 .pagination-current .pagination-link,
