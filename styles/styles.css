@@ -329,6 +329,8 @@ input.calendar-field::placeholder {
 }
 
 .number-button {
+  position: relative;
+  overflow: hidden;
   flex-shrink: 0;
   justify-self: center;
   display: flex;
@@ -341,6 +343,11 @@ input.calendar-field::placeholder {
   border: none;
   cursor: pointer;
   fill: rgba(117, 97, 87, 0.3);
+  outline: 0;
+}
+
+.number-button:focus-visible svg{
+  outline: auto;
 }
 
 .number-button:hover,
