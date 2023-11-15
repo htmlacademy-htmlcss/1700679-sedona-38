@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>
@@ -9,44 +10,46 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../pictures/png/favicon.png">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/script.js" defer></script>
   </head>
 
   <body>
     <div class="content">
-        <header class="page-header" data-test="header">
-          <nav class="navigation pads">
-              <a href="index.html" aria-current="page" class="nav-logo">
-                <img src="pictures/svg/logo.svg" alt="логотип" width="140" height="70">
-              </a>
-              <ul class="navigation-list navigation-page">
-                <li class="navigation-item ">
-                  <a href="index.html" aria-current="page" class="navigation-link current-page">Главная</a>
-                </li>
-                <li class="navigation-item">
-                  <a class="navigation-link" href="#" >О Седоне</a>
-                </li>
-                <li class="navigation-item">
-                  <a class="navigation-link" href="catalog.html">Гостиницы</a>
-                </li>
-              </ul>
-              <ul class="navigation-list  right-part">
-                <li class="navigation-item ">
-                  <a class="navigation-link navigation-search" href="modal.html">
-                    <span class="visually-hidden">Выбрать гостиницу</span>
-                  </a>
-                </li>
-                <li class="navigation-item">
-                  <a class="navigation-link navigation-favorites" href="#">
-                    <span class="visually-hidden">В избранном 12 гостиниц</span>
-                    <span class="liked-hotels-counter">12</span>
-                  </a>
-                </li>
-              </ul>
-              <div class="button-overflow-wrapper">
-                <button type="button" class="standard-button gray-button navigation-here-button">Хочу сюда!</button>
-              </div>
+      <header class="page-header" data-test="header">
+        <nav class="navigation pads">
+            <a href="index.html" aria-current="page" class="nav-logo">
+              <img src="pictures/svg/logo.svg" alt="логотип" width="140" height="70">
+            </a>
+            <ul class="navigation-list navigation-page">
+              <li class="navigation-item ">
+                <a href="index.html" aria-current="page" class="navigation-link current-page">Главная</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#" >О Седоне</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="catalog.html">Гостиницы</a>
+              </li>
+            </ul>
+            <ul class="navigation-list  right-part">
+              <li class="navigation-item ">
+                <a class="navigation-link navigation-search" href="modal.html">
+                  <span class="visually-hidden">Выбрать гостиницу</span>
+                </a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link navigation-favorites" href="#">
+                  <span class="visually-hidden">В избранном 12 гостиниц</span>
+                  <span class="liked-hotels-counter">12</span>
+                </a>
+              </li>
+            </ul>
+            <div class="button-overflow-wrapper">
+              <button type="button" class="standard-button gray-button navigation-here-button">Хочу сюда!</button>
+            </div>
           </nav>
         </header>
+
 
         <main data-test="main" class="main-page">
           <div class="welcome-hero-wrapper" data-test="hero">
@@ -128,6 +131,7 @@
           </article>
         </main>
 
+
         <footer class="page-footer" data-test="footer">
           <section class="socials">
             <h2 class="visually-hidden">Наши соцсети</h2>
@@ -171,6 +175,100 @@
             </a>
           </section>
         </footer>
+    </div>
+    <div class=" popaver-show" >
+      <div class="popaver" data-test="modal">
+        <div class="popaver-content">
+          <button type="button" class="popaver-close-button">
+            <span class="visually-hidden">
+              Кнопка чтобы закрыть попавер
+            </span>
+          </button>
+              <h2 class="popaver-title">
+                Поиск гостиницы в Седоне
+              </h2>
+              <form class="popaver-form" action="https://echo.htmlacademy.ru/" method="post">
+                <ul class="popaver-settings-list">
+                  <li class="popaver-settings-item">
+                    <label class="settings-label" for="check-in-date">
+                      Дата заезда:
+                    </label>
+                    <input class="calendar-field" type="text"  id="check-in-date" name="check-in-date" value="27 апреля 2020" placeholder="Укажите дату" required="">
+                    <span class="calendar-result error">
+                      Мы не можем отправить вас в прошлое.
+                    </span>
+                  </li>
+                  <li class="popaver-settings-item">
+                    <label class="settings-label" for="check-out-date">
+                      Дата выезда:
+                    </label>
+                    <input class="calendar-field" type="text" id="check-out-date" name="check-out-date" value="1 сентября 2023" placeholder="Укажите дату" required="">
+                    <span class="calendar-result">
+                      На эти даты есть свободные номера. Пока есть.
+                    </span>
+                  </li>
+                  <li class="popaver-settings-item popaver-settings-low">
+                    <label class="settings-label" for="adults">
+                      Взрослые:
+                    </label>
+                    <span class="popaver-number-buttons">
+                      <button class="number-button" type="button" onclick="changeValue('decrease', 'adults')">
+                        <span class="visually-hidden">
+                          Уменьшить.
+                        </span>
+                        <svg width="20" height="20" aria-hidden="true" focusable="false">
+                          <path d="M3 9v2h14V9H3Z"></path>
+                        </svg>
+                      </button>
+                      <input class="number-field" type="number" id="adults" name="adults" value="2"  min="1" max="9" required="">
+                      <button class="number-button" type="button" onclick="changeValue('increase', 'adults')">
+                        <span class="visually-hidden">
+                          Увеличить.
+                        </span>
+                        <svg width="20" height="20" aria-hidden="true" focusable="false">
+                          <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"></path>
+                        </svg>
+                      </button>
+                    </span>
+                  </li>
+                  <li class="popaver-settings-item popaver-settings-low">
+                    <span class="tooltip-wrapper">
+                      <label class="settings-label" for="children">
+                        Дети:
+                      </label>
+                      <span class="tooltip">
+                        <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                        </button>
+                        <span class="tooltip-text" role="tooltip" id="tooltip-label">
+                          Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                        </span>
+                      </span>
+                    </span>
+                    <span class="popaver-number-buttons">
+                      <button class="number-button" type="button" onclick="changeValue('decrease', 'children')">
+                        <span class="visually-hidden">
+                          Уменьшить.
+                        </span>
+                        <svg width="20" height="20" aria-hidden="true" focusable="false">
+                          <path d="M3 9v2h14V9H3Z"></path>
+                        </svg>
+                      </button>
+                      <input class="number-field" type="number" id="children" name="children" value="2" min="0" max="9" required="">
+                      <button class="number-button" type="button" onclick="changeValue('increase', 'children')">
+                        <span class="visually-hidden">
+                          Увеличить.
+                        </span>
+                        <svg  width="20" height="20" aria-hidden="true" focusable="false">
+                          <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"></path>
+                        </svg>
+                      </button>
+                    </span>
+                  </li>
+                </ul>
+                <button class="standard-button popaver-find" type="submit">Найти</button>
+              </form>
+          </div>
+      </div>
     </div>
   </body>
 </html>
