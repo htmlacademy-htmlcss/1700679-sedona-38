@@ -133,7 +133,7 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  max-width: 220px;
+  max-width: 175px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -295,7 +295,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   background-color: #f2f2f2;
-  background-image: url(../pictures/svg/calendar.svg);
+  background-image: url("../pictures/svg/calendar.svg");
   background-repeat: no-repeat;
   background-position: right 18px center;
   border: 2px solid #f2f2f2;
@@ -306,7 +306,8 @@ body {
 
 input.calendar-field::placeholder {
   font-family: inherit;
-  color: #000000 ;
+  color: #000000;
+  opacity: 0.6;
 }
 
 .calendar-field:hover {
@@ -408,7 +409,10 @@ input.calendar-field::placeholder {
   padding: 0;
   border: none;
   border-radius: 50%;
-  background: #83b3d3 url(../pictures/svg/info.svg) no-repeat center;
+  background-color: #83b3d3;
+  background-image: url("../pictures/svg/info.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .tooltip-text {
@@ -435,7 +439,7 @@ input.calendar-field::placeholder {
 
 .tooltip-text::after {
   content: "";
-  background-image: url("../pictures/svg/tooltip-triangle.svg");
+  background-image: url(../pictures/svg/tooltip-triangle.svg);
   width: 19px;
   height: 9px;
   position: absolute;
@@ -457,7 +461,7 @@ input.calendar-field::placeholder {
   border: none;
   background-color: #83b3d3;
   border-radius: 50%;
-  background-image: url(../pictures/svg/info.svg);
+  background-image: url("../pictures/svg/info.svg");
 }
 
 .tooltip-text {
@@ -595,6 +599,7 @@ input.calendar-field::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
+  align-self: flex-start;
 }
 
 .right-part .navigation-link {
@@ -608,13 +613,13 @@ input.calendar-field::placeholder {
 }
 
 .navigation-favorites {
-  background-image: url(../pictures/svg/heart.svg);
+  background-image: url("../pictures/svg/heart.svg");
   width: 20px;
   height: 64px;
 }
 
 .navigation-search {
-  background-image: url(../pictures/svg/search.svg);
+  background-image: url("../pictures/svg/search.svg");
   width: 20px;
   height: 64px;
 }
@@ -627,7 +632,7 @@ input.calendar-field::placeholder {
 
 .button-overflow-wrapper {
   margin-left: 20px;
-  max-width: 200px;
+  max-width: 160px;
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
@@ -665,7 +670,7 @@ input.calendar-field::placeholder {
   padding-top: 51px;
   margin: 0 auto;
   background-color: #8daab8;
-  background-image: url(../pictures/svg/whiteline.svg), url(../pictures/jpeg/sedona_background.jpg);
+  background-image: url("../pictures/svg/whiteline.svg"), url("../pictures/jpeg/sedona_background.jpg");
   background-position: bottom, bottom;
   background-repeat: no-repeat, no-repeat;
   background-size: auto auto ,100% 100%;
@@ -874,15 +879,15 @@ input.calendar-field::placeholder {
 }
 
 .home {
-  background-image: url(../pictures/svg/home.svg);
+  background-image: url("../pictures/svg/home.svg");
 }
 
 .food {
-  background-image: url(../pictures/svg/food.svg);
+  background-image: url("../pictures/svg/food.svg");
 }
 
 .souvenirs {
-  background-image: url(../pictures/svg/souvenirs.svg);
+  background-image: url("../pictures/svg/souvenirs.svg");
 }
 
 .addition-advantages-title {
@@ -954,7 +959,7 @@ input.calendar-field::placeholder {
 
 .newsletter-subscribe {
   background-color: #8daab8;
-  background-image: url(../pictures/jpeg/subscribe_background.jpg);
+  background-image: url("../pictures/jpeg/subscribe_background.jpg");
   background-repeat: no-repeat;
   color: #fff;
   display: flex;
@@ -1190,12 +1195,12 @@ input.calendar-field::placeholder {
 }
 
 .checkbox-button:checked {
-  background-image: url(../pictures/svg/tick.svg);
+  background-image: url("../pictures/svg/tick.svg");
   background-position: center;
 }
 
 .radio-button:checked {
-  background-image: url(../pictures/svg/radio-tick.svg);
+  background-image: url("../pictures/svg/radio-tick.svg");
   background-size: cover;
   background-position: center;
 }
@@ -1299,6 +1304,7 @@ input.calendar-field::placeholder {
 .accept,
 .reset {
   padding: 8px 50px;
+  max-width: 191px;
 }
 
 .reset {
@@ -1468,7 +1474,7 @@ input.calendar-field::placeholder {
   line-height: 21px;
   background-position: right 20px center;
   background-size: 12px, 7px;
-  background-image: url(../pictures/svg/select.svg);
+  background-image: url("../pictures/svg/select.svg");
   background-repeat: no-repeat;;
   margin-left: auto;
   font-family: inherit;
@@ -1511,15 +1517,15 @@ input.calendar-field::placeholder {
 }
 
 .table {
-  background-image: url(../pictures/svg/tablerow.svg);
+  background-image: url("../pictures/svg/tablerow.svg");
 }
 
 .big-picture {
-  background-image: url(../pictures/svg/grid.svg);
+  background-image: url("../pictures/svg/grid.svg");
 }
 
 .list {
-  background-image: url(../pictures/svg/list.svg);
+  background-image: url("../pictures/svg/list.svg");
 }
 
 .socials-list {
@@ -1577,7 +1583,7 @@ input.calendar-field::placeholder {
   align-items: flex-start;
   gap: 40px;
   background-color: #8daab8;
-  background-image: url(../pictures/jpeg/filter_background.jpg);
+  background-image: url("../pictures/jpeg/filter_background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
@@ -1607,7 +1613,7 @@ input.calendar-field::placeholder {
   height: 12px;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(../pictures/svg/home_page.svg);
+  background-image: url("../pictures/svg/home_page.svg");
   background-size: cover;
 }
 
@@ -1640,7 +1646,7 @@ input.calendar-field::placeholder {
   height: 11px;
   width: 8px;
   margin: 0 10px;
-  background-image: url(../pictures/svg/breadcrumbs.svg);
+  background-image: url("../pictures/svg/breadcrumbs.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1760,7 +1766,7 @@ input.calendar-field::placeholder {
   height: 17px;
   background-size: contain;
   background-repeat: repeat-x;
-  background-image: url(../pictures/svg/star.svg);
+  background-image: url("../pictures/svg/star.svg");
 }
 
 .four-stars {
