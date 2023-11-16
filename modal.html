@@ -7,7 +7,7 @@
       Седона
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" sizes="32x32" href="../pictures/png/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../pictures/favicon.png">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/script.js" defer></script>
@@ -31,9 +31,9 @@
                 <a class="navigation-link" href="catalog.html">Гостиницы</a>
               </li>
             </ul>
-            <ul class="navigation-list  right-part">
+            <ul class="navigation-list  user-menu">
               <li class="navigation-item ">
-                <a class="navigation-link navigation-search" href="modal.html">
+                <a class="navigation-link navigation-search" href="#">
                   <span class="visually-hidden">Выбрать гостиницу</span>
                 </a>
               </li>
@@ -176,20 +176,20 @@
           </section>
         </footer>
     </div>
-    <div class=" popaver-show" >
-      <div class="popaver" data-test="modal">
-        <div class="popaver-content">
-          <button type="button" class="popaver-close-button">
+    <div class=" popover-show" >
+      <div class="popover" data-test="modal">
+        <div class="popover-content">
+          <button type="button" class="popover-close-button">
             <span class="visually-hidden">
               Кнопка чтобы закрыть попавер
             </span>
           </button>
-              <h2 class="popaver-title">
+              <h2 class="popover-title">
                 Поиск гостиницы в Седоне
               </h2>
-              <form class="popaver-form" action="https://echo.htmlacademy.ru/" method="post">
-                <ul class="popaver-settings-list">
-                  <li class="popaver-settings-item">
+              <form class="popover-form" action="https://echo.htmlacademy.ru/" method="post">
+                <ul class="popover-settings-list">
+                  <li class="popover-settings-item">
                     <label class="settings-label" for="check-in-date">
                       Дата заезда:
                     </label>
@@ -198,7 +198,7 @@
                       Мы не можем отправить вас в прошлое.
                     </span>
                   </li>
-                  <li class="popaver-settings-item">
+                  <li class="popover-settings-item">
                     <label class="settings-label" for="check-out-date">
                       Дата выезда:
                     </label>
@@ -207,11 +207,11 @@
                       На эти даты есть свободные номера. Пока есть.
                     </span>
                   </li>
-                  <li class="popaver-settings-item popaver-settings-low">
+                  <li class="popover-settings-item popover-settings-low">
                     <label class="settings-label" for="adults">
                       Взрослые:
                     </label>
-                    <span class="popaver-number-buttons">
+                    <span class="popover-number-buttons">
                       <button class="number-button" type="button" onclick="changeValue('decrease', 'adults')">
                         <span class="visually-hidden">
                           Уменьшить.
@@ -231,7 +231,7 @@
                       </button>
                     </span>
                   </li>
-                  <li class="popaver-settings-item popaver-settings-low">
+                  <li class="popover-settings-item popover-settings-low">
                     <span class="tooltip-wrapper">
                       <label class="settings-label" for="children">
                         Дети:
@@ -244,7 +244,7 @@
                         </span>
                       </span>
                     </span>
-                    <span class="popaver-number-buttons">
+                    <span class="popover-number-buttons">
                       <button class="number-button" type="button" onclick="changeValue('decrease', 'children')">
                         <span class="visually-hidden">
                           Уменьшить.
@@ -265,7 +265,7 @@
                     </span>
                   </li>
                 </ul>
-                <button class="standard-button popaver-find" type="submit">Найти</button>
+                <button class="standard-button popover-find" type="submit">Найти</button>
               </form>
           </div>
       </div>
