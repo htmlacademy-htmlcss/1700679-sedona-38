@@ -6,9 +6,10 @@
       Седона
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" sizes="32x32" href="../pictures/png/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../pictures/favicon.png">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/script.js" defer></script>
   </head>
 
   <body>
@@ -29,9 +30,9 @@
                   <a class="navigation-link" href="catalog.html">Гостиницы</a>
                 </li>
               </ul>
-              <ul class="navigation-list  right-part">
+              <ul class="navigation-list  user-menu">
                 <li class="navigation-item ">
-                  <a class="navigation-link navigation-search" href="modal.html">
+                  <a class="navigation-link navigation-search" href="#">
                     <span class="visually-hidden">Выбрать гостиницу</span>
                   </a>
                 </li>
@@ -162,8 +163,6 @@
               <h2 class="visually-hidden">Наш телефон</h2>
               <a class="phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </section>
-          <section class="partnership">
-            <h2 class="visually-hidden">Наш партнёр </h2>
             <a href="https://htmlacademy.ru/" class="htmlacademy-logo-link">
               <svg role="img" aria-label="HTML Academy" width="115" height="34">
                 <path d="M0 13.256v2.6h2.5v-2.6H0ZM11.6 4.856c-1.6 0-2.8.7-3.6 1.7h-.1v-6.2h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2v-6.1c.1-3-1.8-4.9-4.5-4.9ZM26.6 5.156h-4.8v-3.7h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1v-5.7h4.8v-2ZM41.1 4.956c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1v-1.6H29v10.6h2v-5.4c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 13.056c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V.356h-2v12.7ZM28.9 20.056c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22.356c-.5-2.4-2.6-4.1-5.4-4.1-3.4 0-5.6 2.5-5.6 5.6 0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1c-.4 1.3-1.7 2.3-3.3 2.3-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1v-.2ZM55.1 20.056c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 20.156c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2v-15.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 18.256c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 18.256c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27.356l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"/>
@@ -171,6 +170,99 @@
             </a>
           </section>
         </footer>
+        <div class="popover-show popover-close" >
+          <div class="popover" data-test="modal">
+            <div class="popover-content">
+              <button type="button" class="popover-close-button">
+                <span class="visually-hidden">
+                  Кнопка чтобы закрыть попавер
+                </span>
+              </button>
+                  <h2 class="popover-title">
+                    Поиск гостиницы в Седоне
+                  </h2>
+                  <form class="popover-form" action="https://echo.htmlacademy.ru/" method="post">
+                    <ul class="popover-settings-list">
+                      <li class="popover-settings-item">
+                        <label class="settings-label" for="check-in-date">
+                          Дата заезда:
+                        </label>
+                        <input class="calendar-field" type="text"  id="check-in-date" name="check-in-date" value="27 апреля 2020" placeholder="Укажите дату" required="">
+                        <span class="calendar-result error">
+                          Мы не можем отправить вас в прошлое.
+                        </span>
+                      </li>
+                      <li class="popover-settings-item">
+                        <label class="settings-label" for="check-out-date">
+                          Дата выезда:
+                        </label>
+                        <input class="calendar-field" type="text" id="check-out-date" name="check-out-date" value="1 сентября 2023" placeholder="Укажите дату" required="">
+                        <span class="calendar-result">
+                          На эти даты есть свободные номера. Пока есть.
+                        </span>
+                      </li>
+                      <li class="popover-settings-item popover-settings-low">
+                        <label class="settings-label" for="adults">
+                          Взрослые:
+                        </label>
+                        <span class="popover-number-buttons">
+                          <button class="number-button" type="button" onclick="changeValue('decrease', 'adults')">
+                            <span class="visually-hidden">
+                              Уменьшить.
+                            </span>
+                            <svg width="20" height="20" aria-hidden="true" focusable="false">
+                              <path d="M3 9v2h14V9H3Z"></path>
+                            </svg>
+                          </button>
+                          <input class="number-field" type="number" id="adults" name="adults" value="2"  min="1" max="9" required="">
+                          <button class="number-button" type="button" onclick="changeValue('increase', 'adults')">
+                            <span class="visually-hidden">
+                              Увеличить.
+                            </span>
+                            <svg width="20" height="20" aria-hidden="true" focusable="false">
+                              <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"></path>
+                            </svg>
+                          </button>
+                        </span>
+                      </li>
+                      <li class="popover-settings-item popover-settings-low">
+                        <span class="tooltip-wrapper">
+                          <label class="settings-label" for="children">
+                            Дети:
+                          </label>
+                          <span class="tooltip">
+                            <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                            </button>
+                            <span class="tooltip-text" role="tooltip" id="tooltip-label">
+                              Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                            </span>
+                          </span>
+                        </span>
+                        <span class="popover-number-buttons">
+                          <button class="number-button" type="button" onclick="changeValue('decrease', 'children')">
+                            <span class="visually-hidden">
+                              Уменьшить.
+                            </span>
+                            <svg width="20" height="20" aria-hidden="true" focusable="false">
+                              <path d="M3 9v2h14V9H3Z"></path>
+                            </svg>
+                          </button>
+                          <input class="number-field" type="number" id="children" name="children" value="2" min="0" max="9" required="">
+                          <button class="number-button" type="button" onclick="changeValue('increase', 'children')">
+                            <span class="visually-hidden">
+                              Увеличить.
+                            </span>
+                            <svg  width="20" height="20" aria-hidden="true" focusable="false">
+                              <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"></path>
+                            </svg>
+                          </button>
+                        </span>
+                      </li>
+                    </ul>
+                    <button class="standard-button popover-find" type="submit">Найти</button>
+                  </form>
+              </div>
+          </div>
     </div>
   </body>
 </html>

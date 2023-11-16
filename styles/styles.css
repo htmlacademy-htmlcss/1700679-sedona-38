@@ -28,7 +28,7 @@ img {
 
 body {
   margin: 0;
-  font-family: "Pt Sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
   background: #f2f2f2;
   padding: 0 40px;
 }
@@ -143,7 +143,7 @@ body {
   max-width: 500px;
 }
 
-.right-part {
+.user-menu {
   margin-left: auto;
 }
 
@@ -161,7 +161,7 @@ body {
   bottom: 0;
 }
 
-.popaver-show {
+.popover-show {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -176,11 +176,11 @@ body {
   z-index: 2;
 }
 
-.popaver-close {
+.popover-close {
   display: none;
 }
 
-.popaver-content {
+.popover-content {
   width: 717px;
   max-height: 585px;
   overflow-y: auto;
@@ -193,7 +193,7 @@ body {
   border-radius: 30px;
 }
 
-.popaver-close-button {
+.popover-close-button {
   position:absolute;
   min-width: 52px;
   min-height: 52px;
@@ -205,7 +205,7 @@ body {
   right: 52px;
 }
 
-.popaver-close-button::before {
+.popover-close-button::before {
   content: '';
   position: absolute;
   top: 0;
@@ -217,28 +217,28 @@ body {
   background-repeat: no-repeat;
 }
 
-.popaver-close-button:hover {
+.popover-close-button:hover {
   background-color: #e6e6e6;
 }
 
-.popaver-close-button:focus-visible {
+.popover-close-button:focus-visible {
   background-color: #e6e6e6;
 }
 
-.popaver-close-button:active::before {
+.popover-close-button:active::before {
   opacity: 0.3;
 }
 
-.popaver-close-button:active {
+.popover-close-button:active {
   background-color: #e6e6e6;
 }
 
-.popaver-form {
+.popover-form {
   display: flex;
   flex-direction: column;
 }
 
-.popaver-settings-list {
+.popover-settings-list {
   display: grid;
   grid-template-columns: 247px 242px;
   gap: 23px 88px;
@@ -246,7 +246,7 @@ body {
   margin: 0;
 }
 
-.popaver-title {
+.popover-title {
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -260,7 +260,7 @@ body {
   overflow-wrap: break-word;
 }
 
-.popaver-settings-item {
+.popover-settings-item {
   display: grid;
   grid-template-columns: 1fr 440px;
   gap: 4px;
@@ -269,7 +269,7 @@ body {
   grid-column: 1 / -1;
 }
 
-.popaver-settings-low {
+.popover-settings-low {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -320,7 +320,7 @@ input.calendar-field::placeholder {
   border-color: #e6e6e6;
 }
 
-.popaver-number-buttons {
+.popover-number-buttons {
   display: grid;
   grid-template-columns: 40px 31px 40px;
   align-items: center;
@@ -514,7 +514,7 @@ input.calendar-field::placeholder {
   color: #FF5757;
 }
 
-.popaver-find {
+.popover-find {
   grid-column: 1 / -1;
   margin-top: 48px;
   padding: 18px 77px;
@@ -526,26 +526,26 @@ input.calendar-field::placeholder {
   overflow-wrap: break-word;
 }
 
-.popaver-find:hover,
-.popaver-find:focus-visible {
+.popover-find:hover,
+.popover-find:focus-visible {
   background-color: #68a2ca;
 }
 
-.popaver-find:active {
+.popover-find:active {
   color: rgb(255, 255, 255, 0.3);
   background-color: #68a2ca;
 }
 
-.popaver-find:disabled {
+.popover-find:disabled {
   background-color: #e5e5e5;
   pointer-events: none;
 }
 
-.popaver-close {
+.popover-close {
   display: none;
 }
 
-.popaver-close .popaver {
+.popover-close .popover {
   display: none;
 }
 
@@ -566,7 +566,7 @@ input.calendar-field::placeholder {
 }
 
 .navigation-link {
-  font-family: "Pt sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 24px;
   padding: 20px 16px;
@@ -593,7 +593,7 @@ input.calendar-field::placeholder {
   opacity: 0.3;
 }
 
-.right-part .navigation-item {
+.user-menu .navigation-item {
   min-width: 44px;
   min-height: 64px;
   display: flex;
@@ -602,7 +602,7 @@ input.calendar-field::placeholder {
   align-self: flex-start;
 }
 
-.right-part .navigation-link {
+.user-menu .navigation-link {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
@@ -1064,7 +1064,7 @@ input.calendar-field::placeholder {
   opacity: 0.3;
 }
 
-.partnership {
+.htmlacademy-logo-link {
   display: flex;
   flex-wrap: wrap;
   max-width: 120px;
@@ -1550,7 +1550,7 @@ input.calendar-field::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 40px;
+  min-height: 50px;
   min-width: 47px;
 }
 
