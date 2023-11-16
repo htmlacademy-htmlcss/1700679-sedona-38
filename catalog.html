@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" sizes="32x32" href="../pictures/favicon.png">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-
     <title>
       Каталог
     </title>
@@ -16,18 +15,18 @@
     <div class="content">
       <header class="page-header" data-test="header">
         <nav class="navigation pads">
-            <a href="index.html" aria-current="page" class="nav-logo">
+            <a href="index.html" class="nav-logo">
               <img src="pictures/svg/logo.svg" alt="логотип" width="140" height="70">
             </a>
             <ul class="navigation-list navigation-page">
               <li class="navigation-item">
-                <a href="index.html" aria-current="page" class="navigation-link">Главная</a>
+                <a href="index.html" class="navigation-link">Главная</a>
               </li>
               <li class="navigation-item">
                 <a class="navigation-link" href="#" >О Седоне</a>
               </li>
               <li class="navigation-item">
-                <a class="navigation-link current-page" href="catalog.html">Гостиницы</a>
+                <a class="navigation-link current-page" href="catalog.html" aria-current="page">Гостиницы</a>
               </li>
             </ul>
             <ul class="navigation-list  user-menu">
@@ -55,12 +54,12 @@
             <div class="breadcrumbs">
               <ul class="breadcrumbs-list">
                 <li class="breadcrumbs-item">
-                  <a aria-current="page" class="breadcrumbs-link home-breadcrumbs">
+                  <a href="index.html" class="breadcrumbs-link home-breadcrumbs">
                     <span class="visually-hidden">Вернуться назад</span>
                   </a>
                 </li>
                 <li class="breadcrumbs-item">
-                  <a class="breadcrumbs-link" href="#">Гостиницы</a>
+                  <a class="breadcrumbs-link" href="catalog.html" aria-current="page">Гостиницы</a>
                 </li>
               </ul>
             </div>
@@ -242,7 +241,7 @@
 
               <ul class="pagination">
                 <li class="pagination-item pagination-current">
-                  <a class="pagination-link" href="#">1</a>
+                  <a class="pagination-link" aria-current="page" href="catalog.html">1</a>
                 </li>
                 <li class="pagination-item">
                   <a class="pagination-link" href="#">2</a>
