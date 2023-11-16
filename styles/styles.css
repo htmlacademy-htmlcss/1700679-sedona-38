@@ -1039,6 +1039,7 @@ input.calendar-field::placeholder {
   max-width: 340px;
   min-height: 50px;
   align-items: center;
+  gap: 10px;
 }
 
 .phone-link {
@@ -1064,20 +1065,24 @@ input.calendar-field::placeholder {
   opacity: 0.3;
 }
 
-.htmlacademy-logo-link {
+.partnership{
   display: flex;
   flex-wrap: wrap;
-  max-width: 120px;
-  min-height: 50px;
+  max-width: 115px;
   align-items: center;
+}
+
+.htmlacademy-logo-link {
+  display: flex;
+  align-items: center;
+  max-height: 40px;
 }
 
 .htmlacademy-logo-link {
   display: block;
   position: relative;
-  margin: 8.5px 0;
+  margin: 6px 0;
 }
-
 
 .htmlacademy-logo-link svg {
   fill: #000000;
@@ -1536,7 +1541,6 @@ input.calendar-field::placeholder {
   padding: 0;
   flex-wrap: wrap ;
   align-items: center;
-  min-height: 50px;
 }
 
 .socials-item {
@@ -1544,6 +1548,7 @@ input.calendar-field::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 50px;
 }
 
 .socials-link {
